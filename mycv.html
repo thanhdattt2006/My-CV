@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Võ Cao Thành Đạt</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="mycv.css">
+</head>
+<body>
+    <div class="controls">
+        <button class="lang-btn active" onclick="switchLanguage('en')" data-lang="en">EN</button>
+        <button class="lang-btn" onclick="switchLanguage('vi')" data-lang="vi">VI</button>
+        <button class="download-btn" onclick="downloadPDF()">
+            <i class="fas fa-download"></i> 
+            <span class="download-text" data-en="Download PDF" data-vi="Tải PDF">Download PDF</span>
+        </button>
+    </div>
+
+    <div class="container" id="cv-content">
+        <div class="cv-content">
+            <div class="left-column">
+                <img src="asset/CV-img.jpg" alt="" class="profile-img">
+                
+                <h1 class="name">Võ Cao Thành Đạt</h1>
+                <p class="nickname">(Dave)</p>
+                <p class="title" data-en="Backend Developer" data-vi="Backend Developer">Backend Developer</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>thanhdattt2006@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+84 775 255 721</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Ho Chi Minh City, Vietnam</span>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.facebook.com/thanh.at.699903" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                            <span>fb.com/thanh.at.699903</span>
+                        </a>
+                    </div>
+                </div>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-code"></i>
+                        <span data-en="Technical Skills" data-vi="Kỹ Năng Kỹ Thuật">Technical Skills</span>
+                    </h2>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>HTML5/CSS3</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>JavaScript</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>ReactJS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span>PHP/Laravel</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-en="Java (Learning)" data-vi="Java (Đang học)">Java (Learning)</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 20%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-en="C#/.NET (Learning)" data-vi="C#/.NET (Đang học)">C#/.NET (Learning)</span>
+                            <span>0%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-language"></i>
+                        <span data-en="Languages" data-vi="Ngôn Ngữ">Languages</span>
+                    </h2>
+                    <div class="language-item">
+                        <span data-en="Vietnamese" data-vi="Tiếng Việt">Vietnamese</span>
+                        <span class="language-level" data-en="Native" data-vi="Tiếng mẹ đẻ">Native</span>
+                    </div>
+                    <div class="language-item">
+                        <span data-en="English" data-vi="Tiếng Anh">English</span>
+                        <span class="language-level" data-en="Fluent" data-vi="Thành thạo">Fluent</span>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-certificate"></i>
+                        <span data-en="Certifications" data-vi="Chứng Chỉ">Certifications</span>
+                    </h2>
+                    <div class="certificates-placeholder">
+                        <span data-en="3 Certifications will be added soon" data-vi="3 Chứng chỉ sẽ được bổ sung">3 Certifications will be added soon</span>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-heart"></i>
+                        <span data-en="Interests" data-vi="Sở Thích">Interests</span>
+                    </h2>
+                    <div class="interests">
+                        <span class="interest-tag" data-en="Technology" data-vi="Công nghệ">Technology</span>
+                        <span class="interest-tag" data-en="Travel" data-vi="Du lịch">Travel</span>
+                        <span class="interest-tag" data-en="Movie" data-vi="Xem phim">Movie</span>
+                        <span class="interest-tag" data-en="Music" data-vi="Nghe nhạc">Music</span>
+                        <span class="interest-tag" data-en="Reading" data-vi="Đọc sách">Reading</span>
+                        <span class="interest-tag" data-en="Gaming" data-vi="Gaming">Gaming</span>
+                    </div>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-user-circle"></i>
+                        <span data-en="Professional Summary" data-vi="Tóm Tắt Chuyên Môn">Professional Summary</span>
+                    </h2>
+                    <p class="description" data-en="I am an aspiring Backend Developer currently pursuing the Advanced Diploma in Software Engineering (ADSE) at Aptech. Although I am seeking internship opportunities as I do not have formal IT experience, I possess strong communication skills and teamwork abilities developed through my experience as a tour guide. My excellent English communication skills and passion for technology drive me to continuously learn and master new programming languages and frameworks including Java, SpringBoot, and .NET." data-vi="Tôi là một Backend Developer đầy nhiệt huyết hiện đang theo học chương trình Cao đẳng Kỹ thuật Phần mềm Tiên tiến (ADSE) tại Aptech. Mặc dù đang tìm kiếm cơ hội thực tập do chưa có kinh nghiệm chính thức trong lĩnh vực IT, tôi sở hữu kỹ năng giao tiếp xuất sắc và khả năng làm việc nhóm được phát triển qua kinh nghiệm làm hướng dẫn viên du lịch. Kỹ năng giao tiếp tiếng Anh tuyệt vời và niềm đam mê công nghệ thúc đẩy tôi không ngừng học hỏi và nắm vững các ngôn ngữ lập trình cũng như framework mới bao gồm Java, SpringBoot và .NET.">
+                        I am an aspiring Backend Developer currently pursuing the Advanced Diploma in Software Engineering (ADSE) at Aptech. Although I am seeking internship opportunities as I do not have formal IT experience, I possess strong communication skills and teamwork abilities developed through my experience as a tour guide. My excellent English communication skills and passion for technology drive me to continuously learn and master new programming languages and frameworks including Java, SpringBoot, and .NET.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-briefcase"></i>
+                        <span data-en="Experience" data-vi="Kinh Nghiệm">Experience</span>
+                    </h2>
+                    <div class="experience-item">
+                        <div class="job-title" data-en="Scooter Tour Guide" data-vi="Hướng Dẫn Viên Du Lịch Xe Máy">Scooter Tour Guide</div>
+                        <div class="company" data-en="Freelance Tourism Services" data-vi="Dịch vụ Du lịch Tự do">Freelance Tourism Services</div>
+                        <div class="date" data-en="2024 - Present" data-vi="2024 - Hiện tại">2024 - Present</div>
+                        <p class="description" data-en="Nearly one year as a motorbike tour guide in Saigon, although mostly supporting the team leader and occasionally leading tours myself, I have developed a rich foundation in English communication, along with a strong sense of responsibility as a tour leader, effective teamwork skills, and a positive, optimistic attitude." data-vi="Gần một năm làm tour guide xe máy ở Sài Gòn, dù chỉ làm người hỗ trợ cho nhóm trưởng và vài lần làm trưởng guide, tôi đã rèn luyện được vốn Tiếng Anh giao tiếp phong phú, ngoài ra còn có trách nhiệm người làm trưởng tour, khả năng làm việc nhóm hiệu quả và một tinh thần tích cực và lạc quan.">
+                            Nearly one year as a motorbike tour guide in Saigon, although mostly supporting the team leader and occasionally leading tours myself, I have developed a rich foundation in English communication, along with a strong sense of responsibility as a tour leader, effective teamwork skills, and a positive, optimistic attitude.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        <span data-en="Education" data-vi="Học Vấn">Education</span>
+                    </h2>
+                    <div class="education-item">
+                        <div class="degree-title" data-en="Advanced Diploma in Software Engineering (ADSE)" data-vi="Cao đẳng Kỹ thuật Phần mềm Tiên tiến (ADSE)">Advanced Diploma in Software Engineering (ADSE)</div>
+                        <div class="school">Aptech Computer Education</div>
+                        <div class="date" data-en="2023 - Present (In Progress)" data-vi="2023 - Hiện tại (Đang học)">2023 - Present (In Progress)</div>
+                        <p class="description" data-en="Comprehensive program covering software development methodologies, programming languages, database management, and system analysis. Currently focusing on Java development, SpringBoot framework, and enterprise application development." data-vi="Chương trình toàn diện bao gồm phương pháp phát triển phần mềm, ngôn ngữ lập trình, quản lý cơ sở dữ liệu và phân tích hệ thống. Hiện đang tập trung vào phát triển Java, framework SpringBoot và phát triển ứng dụng doanh nghiệp.">
+                            Comprehensive program covering software development methodologies, programming languages, database management, and system analysis. Currently focusing on Java development, SpringBoot framework, and enterprise application development.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section">
+                    <h2 class="section-title">
+                        <i class="fas fa-trophy"></i>
+                        <span data-en="Featured Project" data-vi="Dự Án Nổi Bật">Featured Project</span>
+                    </h2>
+                    <div class="experience-item">
+                        <div class="job-title" data-en="Full-Stack E-commerce Website" data-vi="Website Thương mại Điện tử Full-Stack">Full-Stack E-commerce Website</div>
+                        <div class="company" data-en="Personal Project" data-vi="Dự án Cá nhân">Personal Project</div>
+                        <div class="date">2024</div>
+                        <p class="description" data-en="Developed a comprehensive e-commerce platform using Laravel framework for backend development and modern web technologies for frontend implementation. The project includes user authentication, product management, shopping cart functionality, order processing, and payment integration. Demonstrated proficiency in full-stack development, database design, and API development." data-vi="Phát triển nền tảng thương mại điện tử toàn diện sử dụng framework Laravel cho phát triển backend và các công nghệ web hiện đại cho triển khai frontend. Dự án bao gồm xác thực người dùng, quản lý sản phẩm, chức năng giỏ hàng, xử lý đơn hàng và tích hợp thanh toán. Thể hiện năng lực phát triển full-stack, thiết kế cơ sở dữ liệu và phát triển API.">
+                            Developed a comprehensive e-commerce platform using Laravel framework for backend development and modern web technologies for frontend implementation. The project includes user authentication, product management, shopping cart functionality, order processing, and payment integration. Demonstrated proficiency in full-stack development, database design, and API development.
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    <script src="mycv.js"></script>
+</body>
+</html>
