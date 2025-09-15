@@ -283,7 +283,7 @@
 
             .controls {
                 position: relative;
-                margin: 20px;
+                margin: 0 auto;
                 justify-content: center;
             }
         }
