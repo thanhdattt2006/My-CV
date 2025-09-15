@@ -284,6 +284,7 @@
             .controls {
                 position: relative;
                 margin: 0 auto;
+                max-width: 66%;
                 justify-content: center;
             }
         }
