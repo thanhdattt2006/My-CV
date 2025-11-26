@@ -1,55 +1,68 @@
-        let currentLanguage = 'en';
+// Đặt ngôn ngữ mặc định khi tải trang
+document.addEventListener('DOMContentLoaded', () => {
+  switchLanguage('en');
+});
 
-        function switchLanguage(lang) {
-            currentLanguage = lang;
-            
-            // Update button states
-            document.querySelectorAll('.lang-btn').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.getAttribute('data-lang') === lang) {
-                    btn.classList.add('active');
-                }
-            });
+/**
+ * Chuyển đổi ngôn ngữ của trang
+ * @param {string} lang - Ngôn ngữ để chuyển (ví dụ: 'en' hoặc 'vi')
+ */
+function switchLanguage(lang) {
+  // Cập nhật tất cả các phần tử có thuộc tính data-lang (nội dung)
+  document.querySelectorAll('[data-en], [data-vi]').forEach((el) => {
+    const text = el.getAttribute(`data-${lang}`);
+    if (text && !el.classList.contains('description-list')) {
+      // Bỏ qua description-list để xử lý riêng
+      el.innerText = text;
+    }
+  });
 
-            // Update content
-            document.querySelectorAll('[data-en]').forEach(element => {
-                const text = element.getAttribute('data-' + lang);
-                if (text) {
-                    element.textContent = text;
-                }
-            });
-        }
+  // Xử lý riêng các ul.description-list để duy trì cấu trúc li
+  document.querySelectorAll('ul.description-list').forEach((ul) => {
+    const htmlContent = ul.getAttribute(`data-${lang}`);
+    if (htmlContent) {
+      ul.innerHTML = htmlContent;
+    }
+  });
 
-        function downloadPDF() {
-            // Hide controls before PDF generation
-            const controls = document.querySelector('.controls');
-            controls.style.display = 'none';
+  // Cập nhật trạng thái 'active' cho nút ngôn ngữ
+  document.querySelectorAll('.lang-btn').forEach((btn) => {
+    if (btn.innerText.toLowerCase() === lang) {
+      btn.classList.add('active');
+    } else {
+      btn.classList.remove('active');
+    }
+  });
+}
 
-            const element = document.getElementById('cv-content');
-            const opt = {
-                margin: 10,
-                filename: `CV_Vo_Cao_Thanh_Dat_${currentLanguage.toUpperCase()}.pdf`,
-                image: { type: 'jpeg', quality: 0.98 },
-                html2canvas: { 
-                    scale: 2, 
-                    useCORS: true,
-                    letterRendering: true,
-                    logging: false
-                },
-                jsPDF: { 
-                    unit: 'mm', 
-                    format: 'a4', 
-                    orientation: 'portrait',
-                    compressPDF: true
-                }
-            };
+/**
+ * Tạo và tải xuống CV dưới dạng tệp PDF
+ */
+function downloadPDF() {
+  const element = document.getElementById('cv-content');
+  const defaultLang = document
+    .querySelector('.lang-btn.active')
+    .innerText.toLowerCase();
 
-            html2pdf().set(opt).from(element).save().then(() => {
-                // Show controls after PDF generation
-                controls.style.display = 'flex';
-            });
-        }
+  // Tạm chuyển sang tiếng Anh để tên file PDF nhất quán (nếu muốn)
+  // hoặc giữ nguyên ngôn ngữ hiện tại
+  // switchLanguage('en');
 
-        // Initialize with English
-        switchLanguage('en');
-    
+  const opt = {
+    margin: [0.3, 0.3, 0.5, 0.3], // top, left, bottom, right (inches)
+    filename: 'CV_VoCaoThanhDat.pdf',
+    image: { type: 'jpeg', quality: 0.98 },
+    html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' },
+  };
+
+  // Tạo PDF
+  html2pdf()
+    .from(element)
+    .set(opt)
+    .save()
+    .then(() => {
+      // Tùy chọn: Chuyển về ngôn ngữ ban đầu sau khi tạo PDF
+      // switchLanguage(defaultLang);
+    });
+}

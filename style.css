@@ -1,290 +1,340 @@
+/* =========================================
+   1. GLOBAL & RESET (Cài đặt chung)
+   ========================================= */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+a {
+  color: #000;
+  text-decoration: underline;
+}
 
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
+a:hover {
+  text-decoration: none;
+}
 
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            background: white;
-            box-shadow: 0 0 20px rgba(0,0,0,0.1);
-            position: relative;
-        }
+/* =========================================
+   2. LAYOUT CONTAINER
+   ========================================= */
+.container {
+  max-width: 8.5in; /* Chuẩn khổ giấy Letter/A4 */
+  min-height: 11in;
+  margin: 20px auto;
+  padding: 40px 50px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-sizing: border-box;
+}
 
-        .controls {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            z-index: 1000;
-            display: flex;
-            gap: 10px;
-            background: white;
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
+/* =========================================
+   3. HEADER SECTION (Phần đầu CV)
+   ========================================= */
+.header {
+  text-align: left;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
 
-        .lang-btn, .download-btn {
-            padding: 8px 15px;
-            border: 2px solid #2c3e50;
-            background: transparent;
-            color: #2c3e50;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 12px;
-            font-weight: bold;
-            transition: all 0.3s ease;
-        }
+.header .name {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+}
 
-        .lang-btn.active, .lang-btn:hover, .download-btn:hover {
-            background: #2c3e50;
-            color: white;
-        }
+.header .nickname {
+  margin: 0;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: #555;
+}
 
-        .cv-content {
-            display: flex;
-            min-height: 100vh;
-        }
+.header .title {
+  margin: 5px 0 15px 0;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #555;
+}
 
-        .left-column {
-            width: 35%;
-            background: #2c3e50;
-            color: white;
-            padding: 40px 30px;
-        }
+.header .summary {
+  margin: 15px 0 0 0;
+  font-size: 0.95rem;
+  text-align: justify;
+}
 
-        .right-column {
-            width: 65%;
-            padding: 40px 50px;
-            background: white;
-        }
+/* =========================================
+   4. COMMON SECTION STYLES (Các phần chính)
+   ========================================= */
+.section {
+  margin-bottom: 25px;
+}
 
-        .profile-img {
-            width: 240px;
-            height: 240px;
-            background: #34495e;
-            border-radius: 15px;
-            margin: 0 auto 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 60px;
-            font-weight: bold;
-            color: #ecf0f1;
-            border: 3px solid #050505;
-        }
+.section-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #333;
+  text-transform: uppercase;
+}
 
-        .name {
-            font-size: 24px;
-            font-weight: bold;
-            text-align: center;
-            margin-bottom: 5px;
-        }
+/* =========================================
+   5. ITEMS & JOBS (Chi tiết công việc/Dự án)
+   ========================================= */
+.item {
+  margin-bottom: 20px;
+}
 
-        .nickname {
-            text-align: center;
-            font-size: 16px;
-            color: #bdc3c7;
-            margin-bottom: 10px;
-        }
+.item .job-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
 
-        .title {
-            text-align: center;
-            font-size: 18px;
-            color: #3498db;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
+.item .company-date {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #555;
+  margin: 2px 0 5px 0;
+}
 
-        .contact-info {
-            margin-bottom: 40px;
-        }
+.item .description {
+  margin: 5px 0 0 0;
+  font-size: 0.95rem;
+  text-align: justify;
+}
 
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 15px;
-            font-size: 14px;
-        }
+/* Danh sách mô tả mặc định */
+.item .description-list {
+  margin: 5px 0 0 20px;
+  padding: 0;
+  font-size: 0.95rem;
+  list-style-type: disc;
+}
 
-        .contact-item i {
-            width: 20px;
-            margin-right: 15px;
-            color: #3498db;
-        }
+.item .description-list li {
+  margin-bottom: 5px;
+}
 
-        .contact-item a {
-            color: white;
-            text-decoration: none;
-        }
+/* Danh sách thành tựu (Dùng cho phần Experience) */
+.achievements {
+  margin-top: 12px;
+  padding-left: 20px;
+  font-size: 0.95rem;
+}
 
-        .section {
-            margin-bottom: 40px;
-        }
+.achievements li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
 
-        .section-title {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #3498db;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 8px;
-            display: flex;
-            align-items: center;
-        }
+.achievements strong {
+  color: #000;
+  font-weight: 600;
+}
 
-        .right-column .section-title {
-            color: #2c3e50;
-            border-bottom-color: #2c3e50;
-        }
+/* Links dự án (Github/Live Demo) */
+.project-links {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 20px;
+  font-size: 0.9rem;
+}
 
-        .section-title i {
-            margin-right: 10px;
-            font-size: 16px;
-        }
+.project-links a {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  transition: background 0.2s;
+}
 
-        .skill-item {
-            margin-bottom: 20px;
-        }
+.project-links a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
 
-        .skill-name {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 8px;
-            font-size: 14px;
-            font-weight: 500;
-        }
+/* =========================================
+   6. SPECIFIC LISTS (Liên hệ, Kỹ năng, Ngôn ngữ)
+   ========================================= */
+/* Contact List */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
 
-        .skill-bar {
-            height: 8px;
-            background: #34495e;
-            border-radius: 4px;
-            overflow: hidden;
-        }
+.contact-list li {
+  margin-bottom: 5px;
+  display: flex;
+  gap: 10px;
+}
 
-        .skill-progress {
-            height: 100%;
-            background: #3498db;
-            transition: width 0.3s ease;
-        }
+.contact-list .label {
+  font-weight: 600;
+  min-width: 80px;
+}
 
-        .language-item {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 15px;
-            padding: 10px 0;
-            border-bottom: 1px solid #34495e;
-        }
+/* Skills List */
+.skills-list,
+.language-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.95rem;
+}
 
-        .language-level {
-            color: #3498db;
-            font-weight: bold;
-        }
+.skills-list li,
+.language-list li {
+  margin-bottom: 5px;
+}
 
-        .certificates-placeholder {
-            text-align: center;
-            padding: 20px;
-            background: #34495e;
-            border-radius: 8px;
-            font-style: italic;
-            color: #bdc3c7;
-        }
+.skills-list strong,
+.language-list strong {
+  font-weight: 600;
+}
 
-        .interests {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
+.certificates-placeholder {
+  font-size: 0.95rem;
+  font-style: italic;
+  color: #777;
+}
 
-        .interest-tag {
-            background: #3498db;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            font-size: 12px;
-            font-weight: 500;
-        }
+/* =========================================
+   7. CONTROLS (Nút bấm UI - Ẩn khi in)
+   ========================================= */
+.controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 100;
+}
 
-        .description {
-            text-align: justify;
-            line-height: 1.8;
-            color: #555;
-            margin-bottom: 20px;
-        }
+.controls button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, border-color 0.3s;
+}
 
-        .experience-item, .education-item {
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #eee;
-        }
+.controls button:hover {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+}
 
-        .job-title, .degree-title {
-            font-size: 18px;
-            font-weight: bold;
-            color: #2c3e50;
-            margin-bottom: 8px;
-        }
+.controls button.lang-btn.active {
+  background-color: #333;
+  color: white;
+  border-color: #333;
+}
 
-        .company, .school {
-            font-size: 16px;
-            color: #3498db;
-            font-weight: 600;
-            margin-bottom: 5px;
-        }
+.controls button.lang-btn:not(.active) {
+  background-color: #f8f8f8;
+}
 
-        .date {
-            font-size: 14px;
-            color: #7f8c8d;
-            margin-bottom: 15px;
-            font-style: italic;
-        }
+/* =========================================
+   8. RESPONSIVE (Mobile)
+   ========================================= */
+@media (max-width: 768px) {
+  .container {
+    margin: 10px;
+    padding: 20px;
+    width: auto;
+    min-height: auto;
+  }
 
-        .experience-item .description,
-        .education-item .description {
-            color: #666;
-            line-height: 1.7;
-        }
+  .header .name {
+    font-size: 2rem;
+  }
+  .header .title {
+    font-size: 1.1rem;
+  }
+  .section-title {
+    font-size: 1.2rem;
+  }
 
-        .hidden {
-            display: none;
-        }
+  .job-title {
+    font-size: 1rem;
+  }
 
-        @media print {
-            .controls {
-                display: none;
-            }
-        }
+  .company-date,
+  .description,
+  .contact-list,
+  .skills-list,
+  .language-list,
+  .certificates-placeholder {
+    font-size: 0.9rem;
+  }
 
-        @media (max-width: 768px) {
-            .cv-content {
-                flex-direction: column;
-            }
-            
-            .left-column, .right-column {
-                width: 100%;
-            }
-            
-            .left-column {
-                padding: 30px 20px;
-            }
-            
-            .right-column {
-                padding: 30px 20px;
-            }
+  .controls {
+    top: 10px;
+    right: 10px;
+  }
 
-            .controls {
-                position: relative;
-                margin: 0 auto;
-                max-width: 66%;
-                justify-content: center;
-            }
-        }
+  .controls button {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* =========================================
+   9. PRINT STYLES (Khi in PDF)
+   ========================================= */
+@media print {
+  body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .controls {
+    display: none !important;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  /* Ẩn đường viền background của nút link khi in cho sạch */
+  .project-links a {
+    border: none;
+    padding: 0;
+    background: none;
+  }
+}
