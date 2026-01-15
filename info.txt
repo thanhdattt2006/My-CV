@@ -1,0 +1,208 @@
+==================================================
+PHẦN 1: TIẾNG VIỆT
+==================================================
+
+--- THÔNG TIN CÁ NHÂN ---
+Họ và tên: VÕ CAO THÀNH ĐẠT
+Chức danh: Aspiring Java Backend Developer
+Tóm tắt:
+Sinh viên Công nghệ phần mềm có kinh nghiệm thực tế xây dựng ứng dụng web với PHP/Laravel. Hiện đang chuyển hướng sang Java Backend, bị thu hút bởi tính chặt chẽ, khả năng mở rộng và dễ bảo trì. Đam mê kiến trúc hệ thống và đang tự học Spring Boot. Mong muốn tìm vị trí Thực tập sinh Java để vận dụng kiến thức, học hỏi từ thực tế và đóng góp vào dự án của công ty.
+
+--- LIÊN HỆ ---
+Tiêu đề: Liên Hệ
+Email: thanhdattt2006@gmail.com
+GitHub: github.com/thanhdattt2006
+LinkedIn: linkedin.com/in/thanh-dat-2006
+
+--- KỸ NĂNG ---
+Tiêu đề: Kỹ Năng
+1. Ngôn ngữ: Java (Core focus), PHP, SQL.
+2. Kiến thức Backend: OOP, DSA, RESTful API design, Authentication (OAuth2, JWT).
+3. Công nghệ Web: HTML5, CSS3, JavaScript (ES6+), ReactJS (Functional knowledge).
+4. Cơ sở dữ liệu: MySQL, PostgreSQL (Database design & Optimization).
+5. Công cụ: IntelliJ IDEA, Docker, Postman, Git/GitHub.
+
+--- DỰ ÁN ---
+Tiêu đề: Dự Án
+
+[Dự án 1] Vietnote - Fullstack Note-taking Application
+Thời gian: 11/2025 – Present
+Công nghệ: Laravel (current), MySQL, ReactJS, OAuth 2.0
+Link: Live Demo
+Mô tả chi tiết:
+- Xây dựng RESTful API backend xử lý dữ liệu người dùng và đồng bộ hóa.
+- Tích hợp xác thực bảo mật qua OAuth 2.0 (Google/GitHub) và hệ thống email tự động.
+- Định hướng hiện tại: Đang refactor và chuyển đổi backend từ Laravel sang Java Spring Boot để tối ưu hóa type safety và khả năng bảo trì (Đang thực hiện).
+- Tối ưu hóa schema cơ sở dữ liệu để xử lý hiệu quả các quan hệ người dùng và ghi chú.
+
+[Dự án 2] Shoe Store - E-commerce Web Application
+Thời gian: 06/2025 – 11/2025
+Công nghệ: Laravel, MySQL, Blade Template
+Link: Live Demo | Repo
+Mô tả chi tiết:
+- Thiết kế schema cơ sở dữ liệu quan hệ (RDS) quản lý Sản phẩm, Đơn hàng và Phân quyền.
+- Triển khai logic backend cốt lõi cho Giỏ hàng và quy trình Xử lý Đơn hàng.
+- Bảo mật dữ liệu người dùng sử dụng mã hóa Bcrypt.
+
+--- HỌC VẤN ---
+Tiêu đề: Học Vấn
+Bằng cấp: Lập trình viên quốc tế Aptech (ADSE)
+Trường: Aptech Computer Education
+Thời gian: 09/2024 – 03/2027 (Expected)
+Trọng tâm hiện tại: Phát triển Web với Java, Ứng dụng Doanh nghiệp.
+
+--- KINH NGHIỆM ---
+Tiêu đề: Kinh Nghiệm
+Vị trí: Hướng Dẫn Viên Tự Do
+Thời gian: 2024 – Present
+Mô tả:
+Giao tiếp hiệu quả với khách hàng quốc tế từ hơn 50 quốc gia. Phát triển kỹ năng giải quyết vấn đề và thích nghi tốt trong các tình huống áp lực cao.
+
+--- NGÔN NGỮ ---
+Tiêu đề: Ngôn Ngữ
+1. Tiếng Việt: Bản ngữ
+2. Tiếng Anh: Thành thạo
+3. Tiếng Nhật: Sơ cấp (Đang học)
+
+--- UI ---
+Nút bấm: Tải PDF
+
+
+==================================================
+PHẦN 2: ENGLISH
+==================================================
+
+--- PERSONAL INFO ---
+Name: VÕ CAO THÀNH ĐẠT
+Title: Aspiring Java Backend Developer
+Summary:
+Software Engineering student with practical experience building web applications using PHP/Laravel. Currently transitioning to Java Backend Development, motivated by the ecosystem's strict typing, scalability, and maintainability. Passionate about system architecture and actively self-studying Spring Boot. Seeking a Java Backend Internship to apply my skills, learn from experienced mentors, and contribute to real-world projects.
+
+--- CONTACT ---
+Header: Contact
+Email: thanhdattt2006@gmail.com
+GitHub: github.com/thanhdattt2006
+LinkedIn: linkedin.com/in/thanh-dat-2006
+
+--- TECHNICAL SKILLS ---
+Header: Technical Skills
+1. Languages: Java (Core focus), PHP, SQL.
+2. Backend Concepts: OOP, DSA, RESTful API design, Authentication (OAuth2, JWT).
+3. Web Tech: HTML5, CSS3, JavaScript (ES6+), ReactJS (Functional knowledge).
+4. Databases: MySQL, PostgreSQL (Database design & Optimization).
+5. Tools: IntelliJ IDEA, Docker, Postman, Git/GitHub.
+
+--- PROJECTS ---
+Header: Projects
+
+[Project 1] Vietnote - Fullstack Note-taking Application
+Date: 11/2025 – Present
+Tech Stack: Laravel (current), MySQL, ReactJS, OAuth 2.0
+Links: Live Demo
+Description:
+- Engineered a RESTful API backend handling user data and synchronization.
+- Implemented secure Authentication via OAuth 2.0 (Google/GitHub) and automated email systems.
+- Current Initiative: Refactoring and migrating the backend from Laravel to Java Spring Boot to improve type safety and maintainability (Work in Progress).
+- Optimized database schema to handle relationships between users, notes, and categories efficiently.
+
+[Project 2] Shoe Store - E-commerce Web Application
+Date: 06/2025 – 11/2025
+Tech Stack: Laravel, MySQL, Blade Template
+Links: Live Demo | Repo
+Description:
+- Designed Relational Database Service (RDS) schema managing Products, Orders, and User roles.
+- Implemented core backend logic for Shopping Cart and Order Processing transaction flow.
+- Secured user data using Bcrypt encryption for password management.
+
+--- EDUCATION ---
+Header: Education
+Degree: Advanced Diploma in Software Engineering (ADSE)
+School: Aptech Computer Education
+Date: 09/2024 – 03/2027 (Expected)
+Current Focus: Java Web Development, Enterprise Application Development.
+
+--- EXPERIENCE ---
+Header: Experience
+Job Title: Freelance Tour Guide
+Date: 2024 – Present
+Description:
+Communicated effectively with international clients from 50+ countries. Developed strong problem-solving skills and adaptability in high-pressure situations.
+
+--- LANGUAGES ---
+Header: Languages
+1. Vietnamese: Native
+2. English: Fluent
+3. Japanese: Starter (Studying)
+
+--- UI ---
+Button: Download PDF
+
+
+==================================================
+PHẦN 3: JAPANESE (日本語)
+==================================================
+
+--- PERSONAL INFO ---
+Name: VÕ CAO THÀNH ĐẠT
+Title: Javaバックエンド開発者志望
+Summary:
+PHP/Laravelを使用したWebアプリケーション構築の実務経験を持つソフトウェア工学専攻の学生。厳密な型付け、スケーラビリティ、保守性に魅力を感じ、現在はJavaバックエンド開発へ移行中。システムアーキテクチャに情熱を持ち、Spring Bootを独学しています。実務プロジェクトでスキルを活かし、経験豊富なメンターから学び、チームに貢献できるJavaバックエンドのインターンシップの機会を求めています。
+
+--- CONTACT ---
+Header: 連絡先
+Email: thanhdattt2006@gmail.com
+GitHub: github.com/thanhdattt2006
+LinkedIn: linkedin.com/in/thanh-dat-2006
+
+--- TECHNICAL SKILLS ---
+Header: スキル
+1. 言語: Java (Core focus), PHP, SQL.
+2. バックエンド概念: OOP, DSA, RESTful API design, Authentication (OAuth2, JWT).
+3. Web技術: HTML5, CSS3, JavaScript (ES6+), ReactJS (Functional knowledge).
+4. データベース: MySQL, PostgreSQL (Database design & Optimization).
+5. ツール: IntelliJ IDEA, Docker, Postman, Git/GitHub.
+
+--- PROJECTS ---
+Header: プロジェクト
+
+[Project 1] Vietnote - Fullstack Note-taking Application
+Date: 11/2025 – Present
+Tech Stack: Laravel (current), MySQL, ReactJS, OAuth 2.0
+Links: Live Demo
+Description:
+- ユーザーデータと同期を処理するRESTful APIバックエンドを構築。
+- OAuth 2.0 (Google/GitHub) によるセキュアな認証と自動メールシステムを実装。
+- 現在の取り組み: 型安全性と保守性を向上させるため、バックエンドをLaravelからJava Spring Bootへ移行中（進行中）。
+- ユーザー、ノート、カテゴリ間のリレーションを効率的に処理するようデータベーススキーマを最適化。
+
+[Project 2] Shoe Store - E-commerce Web Application
+Date: 06/2025 – 11/2025
+Tech Stack: Laravel, MySQL, Blade Template
+Links: Live Demo | Repo
+Description:
+- 製品、注文、ユーザー権限を管理するリレーショナルデータベーススキーマを設計。
+- ショッピングカートと注文処理フローのコアバックエンドロジックを実装。
+- Bcrypt暗号化を使用してユーザーデータを保護。
+
+--- EDUCATION ---
+Header: 学歴
+Degree: 高等ソフトウェア工学ディプロマ
+School: Aptech Computer Education
+Date: 09/2024 – 03/2027 (Expected)
+Current Focus: 現在の焦点: Java Web開発、エンタープライズアプリケーション開発。
+
+--- EXPERIENCE ---
+Header: 職務経歴
+Job Title: フリーランスツアーガイド
+Date: 2024 – Present
+Description:
+50カ国以上のクライアントと効果的にコミュニケーションを実施。プレッシャーのかかる状況での問題解決能力と適応力を養った。
+
+--- LANGUAGES ---
+Header: 言語
+1. ベトナム語: 母国語
+2. 英語: 流暢
+3. 日本語: 初級 （現在勉強中）
+
+--- UI ---
+Button: PDFをダウンロード
