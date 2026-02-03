@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV - Võ Cao Thành Đạt</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="controls">
+      <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
+      <button class="lang-btn" onclick="switchLanguage('vi')">VI</button>
+      <button class="download-btn" onclick="downloadPDF()">
+        <span class="download-text" data-en="Download PDF" data-vi="Tải PDF"
+          >Download PDF</span
+        >
+      </button>
+    </div>
+
+    <div class="container" id="cv-content">
+      <header class="header">
+        <h1 class="name">VÕ CAO THÀNH ĐẠT</h1>
+        <p class="nickname">(Dave)</p>
+        <p
+          class="title"
+          data-en="Backend Developer"
+          data-vi="Backend Developer"
+        >
+          Backend Developer
+        </p>
+        <p
+          class="summary"
+          data-en="Aspiring Backend Developer currently pursuing Advanced Diploma in Software Engineering (ADSE) at Aptech Academy.
+Proficient in Java Spring Boot and PHP Laravel ecosystems, with hands-on experience building RESTful APIs, microservices, and full-stack applications.
+Former motorbike tour guide with proven English fluency and strong communication skills, enabling rapid adaptation and effective collaboration in fast-paced development teams.
+Actively seeking Backend/Java/Laravel internship opportunities to apply technical expertise and deliver high-impact solutions."
+          data-vi="Backend Developer đang theo học Chương trình Advanced Diploma in Software Engineering (ADSE) tại Aptech Academy.
+Thành thạo Java Spring Boot và hệ sinh thái PHP Laravel, có kinh nghiệm thực tế xây dựng RESTful API, microservices và ứng dụng full-stack.
+Từng làm hướng dẫn viên tour xe máy hơn 1 năm , sở hữu tiếng Anh giao tiếp lưu loát và kỹ năng truyền đạt xuất sắc, giúp thích nghi nhanh và phối hợp hiệu quả trong team phát triển tốc độ cao.
+Đang tìm kiếm cơ hội thực tập Backend/Java/Laravel để áp dụng kiến thức chuyên môn và mang lại giá trị lớn cho dự án."
+        >
+          Aspiring Backend Developer currently pursuing Advanced Diploma in
+          Software Engineering (ADSE) at Aptech Academy. Proficient in Java
+          Spring Boot and PHP Laravel ecosystems, with hands-on experience
+          building RESTful APIs, microservices, and full-stack applications.
+          Former motorbike tour guide with proven English fluency and strong
+          communication skills, enabling rapid adaptation and effective
+          collaboration in fast-paced development teams. Actively seeking
+          Backend/Java/Laravel internship opportunities to apply technical
+          expertise and deliver high-impact solutions.
+        </p>
+      </header>
+
+      <div class="main-content">
+        <section class="section">
+          <h2
+            class="section-title"
+            data-en="Contact Information"
+            data-vi="Thông Tin Liên Hệ"
+          >
+            Contact Information
+          </h2>
+          <ul class="contact-list">
+            <li>
+              <span class="label">Email:</span>
+              <span>thanhdattt2006@gmail.com</span>
+            </li>
+            <li>
+              <span class="label">Phone:</span>
+              <span>+84 775 255 721</span>
+            </li>
+            <li>
+              <span class="label">Location:</span>
+              <span>Saigon, Vietnam</span>
+            </li>
+            <li>
+              <span class="label">GitHub:</span>
+              <a href="https://github.com/thanhdattt2006" target="_blank"
+                >github.com/thanhdattt2006</a
+              >
+            </li>
+            <li>
+              <span class="label">LinkedIn:</span>
+              <a
+                href="https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-619b37340/"
+                target="_blank"
+                >linkedin.com/in/thành-đạt</a
+              >
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2
+            class="section-title"
+            data-en="Technical Skills"
+            data-vi="Kỹ Năng Kỹ Thuật"
+          >
+            Technical Skills
+          </h2>
+          <ul class="skills-list">
+            <li>
+              <strong data-en="Frontend:" data-vi="Frontend:">Frontend:</strong>
+              HTML5, CSS3, Javascript (ES6+), ReactJS, Blade
+            </li>
+            <li>
+              <strong data-en="Backend:" data-vi="Backend:">Backend:</strong>
+              Java, PHP
+            </li>
+            <li>
+              <strong data-en="Frameworks:" data-vi="Frameworks:"
+                >Frameworks:</strong
+              >
+              Bootstrap, Laravel, Spring Boot
+            </li>
+            <li>
+              <strong data-en="Databases:" data-vi="Cơ sở dữ liệu:"
+                >Databases:</strong
+              >
+              MySQL
+            </li>
+            <li>
+              <strong
+                data-en="Tools & Methods:"
+                data-vi="Công cụ & Phương pháp:"
+                >Tools & Methods:</strong
+              >
+              Git, GitHub, AJAX, RESTful APIs
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title" data-en="Languages" data-vi="Ngôn Ngữ">
+            Languages
+          </h2>
+          <ul class="language-list">
+            <li>
+              <strong data-en="Vietnamese:" data-vi="Tiếng Việt:"
+                >Vietnamese:</strong
+              >
+              <span data-en="Native" data-vi="Bản ngữ">Native</span>
+            </li>
+            <li>
+              <strong data-en="English:" data-vi="Tiếng Anh:">English:</strong>
+              <span data-en="Fluent" data-vi="Thành thạo">Fluent</span>
+            </li>
+          </ul>
+        </section>
+
+        <section class="section">
+          <h2
+            class="section-title"
+            data-en="Featured Projects"
+            data-vi="Dự Án Nổi Bật"
+          >
+            Featured Projects
+          </h2>
+          <div class="item">
+            <h3
+              class="job-title"
+              data-en="Full-Stack Shoe Store Website"
+              data-vi="Website Bán Giày Full-Stack"
+            >
+              Full-Stack Shoe Store Website
+            </h3>
+            <p
+              class="company-date"
+              data-en="Team Project (5 Members) | 6/2025"
+              data-vi="Dự án Nhóm (5 Thành viên) | 6/2025"
+            >
+              Team Project (5 Members) | 6/2025
+            </p>
+            <div class="project-links">
+              <a
+                href="https://laravel-nike-store.onrender.com/"
+                target="_blank"
+                data-en="▶ Live Demo"
+                data-vi="▶ Xem Demo"
+                >▶ Live Demo</a
+              >
+              <a
+                href="https://github.com/thanhdattt2006/Laravel-Store/"
+                target="_blank"
+                data-en="★ Repo"
+                data-vi="★ Mã Nguồn"
+                >★ Repo</a
+              >
+            </div>
+            <ul
+              class="description-list"
+              data-en='<li>Developed a full-stack shoe store website using Laravel and Blade template engine.</li><li>Implemented login/registration with middleware, designed registration UI.</li><li>AJAX-based features: "Add to Cart", real-time quantity/color/price updates, dynamic total, checkout.</li><li>Data synced with database for persistence (logout/reload).</li><li>Search by keyword and order history retrieval functionalities.</li>'
+              data-vi='<li>Phát triển website bán giày full-stack sử dụng Laravel và Blade.</li><li>Triển khai hệ thống đăng nhập/đăng ký với middleware, tự thiết kế giao diện đăng ký.</li><li>Các tính năng AJAX: "Thêm vào giỏ hàng", cập nhật số lượng/màu sắc/giá theo thời gian thực, tổng giá động, quy trình thanh toán.</li><li>Dữ liệu được đồng bộ với cơ sở dữ liệu để duy trì (đăng xuất/tải lại).</li><li>Chức năng tìm kiếm theo từ khóa và truy xuất lịch sử đơn hàng.</li>'
+            >
+              <li>
+                Developed a full-stack shoe store website using Laravel and
+                Blade template engine.
+              </li>
+              <li>
+                Implemented login/registration with middleware, designed
+                registration UI.
+              </li>
+              <li>
+                AJAX-based features: "Add to Cart", real-time
+                quantity/color/price updates, dynamic total, checkout.
+              </li>
+              <li>
+                Data synced with database for persistence (logout/reload).
+              </li>
+              <li>
+                Search by keyword and order history retrieval functionalities.
+              </li>
+            </ul>
+          </div>
+          <div class="item">
+            <h3
+              class="job-title"
+              data-en="Vietnote Fullstack App"
+              data-vi="Vietnote Fullstack App"
+            >
+              Vietnote Fullstack App
+            </h3>
+            <p
+              class="company-date"
+              data-en="Personal Project | Fullstack Development | 11/2025 – 12/2025"
+              data-vi="Dự án Cá nhân | Phát triển Fullstack | 11/2025 – 12/2025"
+            >
+              Personal Project | Fullstack Development | 11/2025 – 12/2025
+            </p>
+            <div class="project-links">
+              <a
+                href="https://vietnote.vercel.app"
+                target="_blank"
+                data-en="▶ Live Demo"
+                data-vi="▶ Xem Demo"
+                >▶ Live Demo</a
+              >
+
+              <a
+                href="https://github.com/thanhdattt2006/Vietnote"
+                target="_blank"
+                data-en="★ Repo"
+                data-vi="★ Mã Nguồn"
+                >★ Frontend Repo</a
+              >
+            </div>
+            <ul
+              class="description-list"
+              data-en="<li>Designed and implemented a full-stack note-taking application using Laravel API (Backend) and React/Vite (Frontend).</li><li>Engineered a robust **Token-Based Authentication** system (Laravel Sanctum) and implemented a secure **Multi-step OTP Password Reset** flow.</li><li>Configured production deployment on **Render (Docker)** for the API and **Vercel** for the static frontend, resolving complex **CORS/Proxy** and **Vite** build issues.</li><li>Developed the **Admin Dashboard** with custom middleware, dynamic charts (Recharts), analytical stats (User growth, activity ranking), and secure User Management features.</li><li>Achieved high UI/UX quality by implementing **CSS Masonry Layout** for variable height notes and fixing the persistent **Dark Mode Flickering (FOUC)** issue with a custom script.</li><li>Integrated **Image SEO** by programmatically setting file slugs and `loading='lazy'` attributes during Base64 processing in the backend.</li>"
+              data-vi="<li>Thiết kế và triển khai ứng dụng ghi chú Fullstack sử dụng Laravel API và React/Vite.</li><li>Xây dựng hệ thống **xác thực dựa trên Token (Sanctum)** an toàn và triển khai quy trình **Đặt lại mật khẩu Multi-step OTP** bảo mật cao.</li><li>Cấu hình triển khai Production trên **Render (Docker)** cho API và **Vercel** cho Frontend, giải quyết dứt điểm các lỗi **CORS/Proxy** và **Vite** phức tạp.</li><li>Phát triển **Dashboard Admin** chuyên nghiệp với Biểu đồ tăng trưởng (Recharts), thống kê phân tích (Gender, Notes Count), và tính năng Quản lý User/Feedback toàn diện.</li><li>Đảm bảo chất lượng UI/UX bằng cách triển khai **Masonry Layout** cho ghi chú và fix lỗi **Nháy màn hình Dark Mode (FOUC)** kinh điển.</li><li>Tích hợp **SEO Hình ảnh** bằng cách tự động gán tên file slug và thuộc tính `loading='lazy'` ngay trong quá trình xử lý Base64 ở Backend.</li>"
+            >
+              <li>
+                Designed and implemented a modular, full-stack note-taking
+                application using Laravel API (Backend) and React/Vite
+                (Frontend).
+              </li>
+              <li>
+                Engineered a robust **Token-Based Authentication** system
+                (Laravel Sanctum) and implemented a secure **Multi-step OTP
+                Password Reset** flow.
+              </li>
+              <li>
+                Configured production deployment on **Render (Docker)** for the
+                API and **Vercel** for the static frontend, resolving complex
+                **CORS/Proxy** and **Vite** build issues.
+              </li>
+              <li>
+                Optimized database performance by switching to **Asynchronous
+                Queued Mail** (Resend API) for feedback and broadcast emails,
+                eliminating server timeouts (500 Internal Server Errors).
+              </li>
+              <li>
+                Developed the **Admin Dashboard** with custom middleware,
+                dynamic charts (Recharts), analytical stats (User growth,
+                activity ranking), and secure User Management features.
+              </li>
+              <li>
+                Achieved high UI/UX quality by implementing **CSS Masonry
+                Layout** for variable height notes and fixing the persistent
+                **Dark Mode Flickering (FOUC)** issue with a custom script.
+              </li>
+              <li>
+                Integrated **Image SEO** by programmatically setting file slugs
+                and `loading='lazy'` attributes during Base64 processing in the
+                backend.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title" data-en="Experience" data-vi="Kinh Nghiệm">
+            Experience
+          </h2>
+
+          <div class="item">
+            <h3
+              class="job-title"
+              data-en="Scooter Tour Guide"
+              data-vi="Hướng Dẫn Viên Du Lịch Xe Máy"
+            >
+              Scooter Tour Guide
+            </h3>
+            <p
+              class="company-date"
+              data-en="Freelance Tourism Services | 2024 - Present"
+              data-vi="Dịch vụ Du lịch Tự do | 2024 - Hiện tại"
+            >
+              Freelance Tourism Services | 2024 - Present
+            </p>
+
+            <!-- Bullet list thay cho đoạn văn dài dòng -->
+            <ul class="achievements">
+              <li
+                data-en="Led and assisted over 250 motorbike/scooter tours for international tourists in Saigon."
+                data-vi="Dẫn và hỗ trợ hơn 250 tour xe máy cho khách quốc tế tại Sài Gòn."
+              >
+                Led and assisted over 250 motorbike/scooter tours for
+                international tourists in Ho Chi Minh City and surrounding
+                areas.
+              </li>
+              <li
+                data-en="Conducted daily English-guided tours on Vietnamese history, culture, food, and hidden spots."
+                data-vi="Hướng dẫn bằng tiếng Anh hàng ngày về lịch sử, văn hóa, ẩm thực và các điểm ẩn của Việt Nam."
+              >
+                Conducted daily English-guided tours on Vietnamese history,
+                culture, food, and hidden spots.
+              </li>
+              <li
+                data-en="Sharpened advanced English communication skills through real-time interaction with tourists from over 50 countries."
+                data-vi="Rèn luyện kỹ năng giao tiếp tiếng Anh lưu loát qua tương tác thực tế với khách từ hơn 50 quốc gia."
+              >
+                Sharpened advanced English communication skills through
+                real-time interaction with tourists from over 50 countries.
+              </li>
+              <li
+                data-en="Demonstrated leadership, high responsibility, quick problem-solving, and effective teamwork in high-pressure environments (traffic, weather, emergencies)."
+                data-vi="Thể hiện khả năng lãnh đạo, trách nhiệm cao, xử lý tình huống nhanh và làm việc nhóm hiệu quả trong môi trường áp lực cao (giao thông, thời tiết, sự cố)."
+              >
+                Demonstrated leadership, high responsibility, quick
+                problem-solving, and effective teamwork in high-pressure
+                environments (traffic, weather, emergencies).
+              </li>
+              <li
+                data-en="Maintained a consistently positive, energetic, and optimistic attitude, ensuring every guest had a safe and memorable experience."
+                data-vi="Luôn giữ thái độ tích cực, tràn đầy năng lượng và lạc quan, mang lại trải nghiệm an toàn và đáng nhớ cho mọi du khách."
+              >
+                Maintained a consistently positive, energetic, and optimistic
+                attitude, ensuring every guest had a safe and memorable
+                experience.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title" data-en="Education" data-vi="Học Vấn">
+            Education
+          </h2>
+          <div class="item">
+            <h3
+              class="job-title"
+              data-en="Advanced Diploma in Software Engineering (ADSE)"
+              data-vi="Hệ thống đào tạo Lập trình viên quốc tế Aptech (ADSE)"
+            >
+              Advanced Diploma in Software Engineering (ADSE)
+            </h3>
+            <p
+              class="company-date"
+              data-en="Aptech Computer Education | 9/2024 - Present (In Progress)"
+              data-vi="Aptech Computer Education | 9/2024 - Hiện tại (Đang học)"
+            >
+              Aptech Computer Education | 2023 - Present (In Progress)
+            </p>
+            <p
+              class="description"
+              data-en="Comprehensive program covering software development methodologies, programming languages, database management, and system analysis. Currently focusing on Java development, SpringBoot framework, and enterprise application development."
+              data-vi="Chương trình toàn diện bao gồm phương pháp phát triển phần mềm, ngôn ngữ lập trình, quản lý cơ sở dữ liệu và phân tích hệ thống. Hiện đang tập trung vào phát triển Java, framework SpringBoot và phát triển ứng dụng doanh nghiệp."
+            >
+              Comprehensive program covering software development...
+            </p>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2
+            class="section-title"
+            data-en="Certifications"
+            data-vi="Chứng Chỉ"
+          >
+            Certifications
+          </h2>
+
+          <div class="item">
+            <h3
+              class="job-title"
+              data-en="Practical Generative AI for Developers"
+              data-vi="Practical Generative AI for Developers"
+            >
+              Practical Generative AI for Developers
+            </h3>
+            <p
+              class="company-date"
+              data-en="Aptech Global Academy – Issued September 2025"
+              data-vi="Aptech Global Academy – Cấp tháng 09/2025"
+            >
+              Aptech Global Academy – Issued September 2025
+            </p>
+            <p
+              class="description"
+              data-en="Hands-on certification focused on building production-ready Gen AI features: prompt engineering, RAG pipelines, LLM integration (OpenAI, Grok, Claude), vector databases, and deploying AI-powered tools in web applications using Python and modern frameworks."
+              data-vi="Chứng chỉ thực hành chuyên sâu về xây dựng tính năng Gen AI production: prompt engineering, RAG, tích hợp LLM, vector DB và triển khai thực tế trong web app."
+            >
+              Hands-on certification focused on building production-ready Gen AI
+              features: prompt engineering, RAG pipelines, LLM integration
+              (OpenAI, Grok, Claude), vector databases, and deploying AI-powered
+              tools in web applications using Python and modern frameworks.
+            </p>
+          </div>
+
+          <div class="item">
+            <h3
+              class="job-title"
+              data-en="Practical Generative AI for Everyone"
+              data-vi="Practical Generative AI for Everyone"
+            >
+              Practical Generative AI for Everyone
+            </h3>
+            <p
+              class="company-date"
+              data-en="Aptech Global Academy – Issued August 2025"
+              data-vi="Aptech Global Academy – Cấp tháng 08/2025"
+            >
+              Aptech Global Academy – Issued August 2025
+            </p>
+            <p
+              class="description"
+              data-en="Comprehensive introduction to Generative AI workflows, covering real-world applications, ethical implementation, and seamless integration of LLMs into everyday development and business processes."
+              data-vi="Nền tảng toàn diện về Generative AI, ứng dụng thực tế và cách tích hợp LLM hiệu quả vào dự án phát triển phần mềm và quy trình kinh doanh."
+            >
+              Comprehensive introduction to Generative AI workflows, covering
+              real-world applications, ethical implementation, and seamless
+              integration of LLMs into everyday development and business
+              processes.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
