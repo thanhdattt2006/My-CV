@@ -1,11 +1,25 @@
 :root {
-  --primary-color: #2c3e50; /* Xanh đậm chuyên nghiệp */
-  --accent-color: #f39c12; /* Xanh sáng cho link/icon */
-  --bg-sidebar: #ecf0f1; /* Xám siêu nhạt cho sidebar */
+  /* Tao pha màu đen ám xanh rêu cực đậm từ màu #57886C của mày. 
+     Dùng cho Tên to và Tiêu đề để tạo độ tương phản tốt nhất */
+  --primary-color: #243026;
+
+  /* Màu #57886C (Pine Green) mày đưa. 
+     Dùng cho Job Title, Icon, Link - Đủ đậm để đọc rõ trên giấy */
+  --accent-color: #57886c;
+
+  /* Sidebar tao pha 5% màu xanh của mày vào màu trắng. 
+     Nhìn nó không bị trắng bệch mà rất dịu */
+  --bg-sidebar: #f7f9f7;
+
+  /* Chữ nội dung vẫn để đen xám cho dễ đọc */
   --text-dark: #2d3436;
+
+  /* Màu chữ phụ */
   --text-light: #636e72;
-  --border-color: #dfe6e9;
-  --spacing: 15px;
+
+  /* Màu #81A684 (Sage Green) mày thích nhất đây.
+     Tao dùng làm đường kẻ (Border) phân cách. Nhìn cực nghệ. */
+  --border-color: #81a684;
 }
 
 * {
@@ -16,39 +30,48 @@
 
 body {
   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: #e9ecef; /* Màu nền web (không in) */
+  background-color: #555; /* Nền tối khi xem trên web để nổi bật tờ giấy */
   color: var(--text-dark);
-  font-size: 13.5px; /* Font size tối ưu để nhét nhiều chữ */
-  line-height: 1.4;
+  font-size: 13.5px;
+  line-height: 1.45;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* --- Container A4 --- */
+/* --- Tờ giấy A4 --- */
 .container {
   width: 210mm;
-  min-height: 296mm; /* Khổ A4 */
+  /* min-height: 297mm;  Bỏ cái này để in không bị lỗi trang trắng */
+  height: 296mm; /* Cố định chiều cao 1 trang */
   background: white;
   margin: 30px auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   display: grid;
-  grid-template-columns: 32% 68%; /* Chia cột: 32% trái - 68% phải */
+  grid-template-columns: 32% 68%;
+  overflow: hidden; /* Cắt phần thừa */
 }
 
 /* --- Sidebar (Left) --- */
 .sidebar {
   background-color: var(--bg-sidebar);
-  padding: 25px 20px;
+  padding: 30px 20px;
   border-right: 1px solid var(--border-color);
+  height: 100%; /* Full chiều cao */
+}
+
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 
 .profile-photo {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto 20px;
-  border-radius: 50%;
+  width: 140px;
+  height: 140px;
+  border-radius: 13%;
   overflow: hidden;
-  border: 3px solid white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: #ddd; /* Placeholder color */
+  border: 4px solid white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ddd;
 }
 
 .profile-photo img {
@@ -62,13 +85,14 @@ body {
 }
 
 .sidebar-title {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: var(--primary-color);
   border-bottom: 2px solid var(--accent-color);
   padding-bottom: 5px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  font-weight: 700;
 }
 
 /* Contact List */
@@ -78,14 +102,14 @@ body {
 .contact-list li {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-size: 0.9rem;
   word-break: break-all;
 }
 .contact-list li i {
-  width: 20px;
+  width: 25px;
   color: var(--accent-color);
-  margin-right: 8px;
+  font-size: 1rem;
 }
 .contact-list a {
   text-decoration: none;
@@ -94,17 +118,19 @@ body {
 
 /* Skills & Edu */
 .edu-item {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 .edu-item .time {
   font-size: 0.8rem;
   color: var(--text-light);
   font-style: italic;
+  margin-bottom: 2px;
 }
 .edu-item .degree {
-  font-weight: bold;
-  margin: 2px 0;
+  font-weight: 700;
+  margin-bottom: 2px;
   font-size: 0.95rem;
+  line-height: 1.3;
 }
 .edu-item .school {
   font-size: 0.9rem;
@@ -117,16 +143,17 @@ body {
   display: block;
   color: var(--primary-color);
   font-size: 0.95rem;
+  margin-bottom: 2px;
 }
 .skill-group p {
   font-size: 0.9rem;
-  margin-top: 2px;
 }
 
 .lang-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 5px;
+  font-size: 0.95rem;
 }
 .lang-item .level {
   color: var(--text-light);
@@ -136,102 +163,120 @@ body {
 /* --- Main Content (Right) --- */
 .main-content {
   padding: 30px 25px;
+  height: 100%;
 }
 
 .header {
   margin-bottom: 20px;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 2px solid #eee;
   padding-bottom: 15px;
 }
 .name {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: var(--primary-color);
-  margin-bottom: 2px;
-  line-height: 1.1;
+  margin-bottom: 5px;
+  line-height: 1;
+  font-weight: 800;
+  text-transform: uppercase;
 }
 .nickname {
   font-size: 1.2rem;
   font-weight: normal;
-  color: var(--text-light);
+  color: #7f8c8d;
+  text-transform: none;
 }
 .job-target {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--accent-color);
   font-weight: 600;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
 }
 .summary {
   text-align: justify;
   color: var(--text-dark);
   font-size: 0.95rem;
+  line-height: 1.5;
 }
 
 .section {
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 .section-title {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: var(--primary-color);
   text-transform: uppercase;
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 5px;
+  padding-bottom: 8px;
   margin-bottom: 15px;
   display: flex;
   align-items: center;
+  font-weight: 700;
 }
 .section-title .icon {
-  margin-right: 10px;
+  margin-right: 12px;
   color: var(--accent-color);
-  font-size: 1rem;
+  background: rgba(52, 152, 219, 0.1);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.9rem;
 }
 
 .item {
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 .item-header {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
+  margin-bottom: 4px;
 }
 .item-title {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
-  color: #000;
+  color: #2c3e50;
 }
 .item-meta {
   font-size: 0.85rem;
-  color: var(--text-light);
+  color: #7f8c8d;
   font-weight: 500;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-style: italic;
 }
 
 .item-links a {
   font-size: 0.75rem;
-  background: #eee;
-  padding: 2px 6px;
-  border-radius: 3px;
+  background: #f1f2f6;
+  padding: 3px 8px;
+  border-radius: 4px;
   text-decoration: none;
   color: #333;
-  margin-left: 5px;
-  border: 1px solid #ddd;
+  margin-left: 8px;
+  border: 1px solid #dcdde1;
+  font-weight: 600;
+  display: inline-block;
 }
 
 .description-list {
-  padding-left: 15px;
-  margin-top: 5px;
+  padding-left: 16px;
+  margin-top: 6px;
 }
 .description-list li {
-  margin-bottom: 3px;
+  margin-bottom: 4px;
   text-align: justify;
 }
 .description-list li b {
-  font-weight: 600;
+  font-weight: 700;
+  color: #34495e;
 }
 
 .cert-item {
-  margin-bottom: 5px;
+  margin-bottom: 6px;
 }
 .cert-item .date {
   font-size: 0.85rem;
@@ -239,9 +284,10 @@ body {
   margin-left: 5px;
 }
 .cert-item .desc-short {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   color: #555;
   display: block;
+  margin-top: 2px;
 }
 
 /* --- Controls UI --- */
@@ -252,7 +298,7 @@ body {
   background: white;
   padding: 10px;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   display: flex;
   gap: 10px;
   z-index: 999;
@@ -260,11 +306,16 @@ body {
 .lang-btn,
 .download-btn {
   border: 1px solid #ddd;
-  padding: 8px 12px;
+  padding: 8px 15px;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 6px;
   background: #fff;
-  font-weight: bold;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s;
+}
+.lang-btn:hover {
+  background: #f8f9fa;
 }
 .lang-btn.active {
   background: var(--primary-color);
@@ -277,54 +328,85 @@ body {
   border-color: var(--accent-color);
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
 }
 .download-btn:hover {
-  opacity: 0.9;
+  background: #2980b9;
 }
 
-/* --- Responsive & Print --- */
-@media print {
-  @page {
-    margin: 0;
-    size: auto;
-  }
-  body {
-    background: white;
-    -webkit-print-color-adjust: exact;
-  }
-  .controls {
-    display: none !important;
-  }
-  .container {
-    width: 100%;
-    box-shadow: none;
-    margin: 0;
-    height: auto;
-    min-height: 100vh;
-  }
-  a {
-    text-decoration: none;
-    color: black;
-  }
-  .item-links {
-    display: none;
-  } /* Ẩn nút demo khi in cho sạch */
-}
-
+/* --- RESPONSIVE MOBILE --- */
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
     width: 100%;
     margin: 0;
+    height: auto;
+    padding-bottom: 50px;
   }
   .sidebar {
     border-right: none;
     border-bottom: 1px solid var(--border-color);
+    height: auto;
   }
   .controls {
     top: auto;
     bottom: 20px;
     right: 20px;
+    width: calc(100% - 40px);
+    justify-content: center;
+  }
+  .name {
+    font-size: 1.8rem;
+  }
+}
+
+/* =========================================
+   PRINT STYLES (ĐÂY LÀ CHỖ QUAN TRỌNG NHẤT)
+   ========================================= */
+@media print {
+  @page {
+    margin: 0; /* Xóa lề mặc định của máy in */
+    size: A4 portrait; /* Ép khổ A4 dọc */
+  }
+
+  body {
+    background-color: white;
+    -webkit-print-color-adjust: exact !important; /* Chrome/Safari: Ép in màu nền */
+    print-color-adjust: exact !important; /* Firefox: Ép in màu nền */
+  }
+
+  .controls {
+    display: none !important;
+  } /* Ẩn nút điều khiển */
+
+  .container {
+    width: 210mm;
+    height: 296mm; /* Full trang A4 */
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    border: none;
+    display: grid; /* Giữ layout Grid */
+    grid-template-columns: 32% 68%;
+  }
+
+  .sidebar {
+    background-color: var(--bg-sidebar) !important; /* Buộc hiện màu nền xám */
+    height: 100%;
+    -webkit-print-color-adjust: exact;
+  }
+
+  .main-content {
+    height: 100%;
+  }
+
+  /* Ẩn các link demo/code để CV nhìn sạch hơn khi in */
+  .item-links {
+    display: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
   }
 }

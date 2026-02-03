@@ -8,7 +8,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,22 +18,20 @@
         </button>
         <button class="lang-btn" onclick="switchLanguage('vi')">VI</button>
       </div>
-      <button class="download-btn" onclick="downloadPDF()">
+      <button class="download-btn" onclick="window.print()">
         <i class="fas fa-file-download"></i>
-        <span class="download-text" data-en="Save PDF" data-vi="Lưu PDF"
-          >Save PDF</span
+        <span class="download-text" data-en="Save as PDF" data-vi="Lưu PDF"
+          >Save as PDF</span
         >
       </button>
     </div>
 
     <div class="container" id="cv-content">
       <aside class="sidebar">
-        <div class="profile-photo">
-          <img
-            src="image.png"
-            alt="Avatar"
-            onerror="this.style.display = 'none'"
-          />
+        <div class="profile-wrapper">
+          <div class="profile-photo">
+            <img src="image.png" alt="Avatar" />
+          </div>
         </div>
 
         <div class="sidebar-section">
@@ -158,7 +155,6 @@
 
         <section class="section">
           <h2 class="section-title">
-            <span class="icon"><i class="fas fa-code"></i></span>
             <span data-en="Featured Projects" data-vi="Dự Án Nổi Bật"
               >Featured Projects</span
             >
@@ -246,7 +242,6 @@
 
         <section class="section">
           <h2 class="section-title">
-            <span class="icon"><i class="fas fa-briefcase"></i></span>
             <span data-en="Experience" data-vi="Kinh Nghiệm">Experience</span>
           </h2>
           <div class="item">
@@ -277,7 +272,6 @@
 
         <section class="section">
           <h2 class="section-title">
-            <span class="icon"><i class="fas fa-certificate"></i></span>
             <span data-en="Certifications" data-vi="Chứng Chỉ"
               >Certifications</span
             >
