@@ -1,7 +1,12 @@
+// Đặt ngôn ngữ mặc định khi tải trang
 document.addEventListener('DOMContentLoaded', () => {
   switchLanguage('en');
 });
 
+/**
+ * Chuyển đổi ngôn ngữ của trang
+ * @param {string} lang - Ngôn ngữ để chuyển (ví dụ: 'en' hoặc 'vi')
+ */
 function switchLanguage(lang) {
   // 1. Text elements
   document.querySelectorAll('[data-en], [data-vi]').forEach((el) => {
