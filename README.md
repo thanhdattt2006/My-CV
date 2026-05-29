@@ -14,10 +14,10 @@ Cảm ơn anh/chị đã ghé thăm portfolio của em!
 - **Liên hệ**: GitHub này hoặc email trong demo
 
 ### Kỹ năng chính
-- **Frontend**: HTML5, CSS3, JavaScript (ES6+), ReactJS, Blade Template  
-- **Backend**: Java (Spring Boot), PHP (Laravel)  
-- **Database**: MySQL  
-- **Tools & Tech**: Git, RESTful API, AJAX, Bootstrap/Tailwind, Postman  
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+), ReactJS
+- **Backend**: Java (Spring Boot), PHP (Laravel), C# (.NET), Nest
+- **Database**: MySQL, MongoDB, Redis
+- **Tools & Tech**: Git, RESTful API, Postman, Intellij, Antigravity
 - **AI**: Đã hoàn thành khóa Practical Generative AI (Aptech Global 2025), biết cách tích hợp LLM vào ứng dụng web
 
 ### Dự án tiêu biểu
@@ -36,5 +36,5 @@ Em luôn giữ thái độ tích cực, trách nhiệm cao và sẵn sàng học
 Rất mong được trao đổi và hợp tác cùng anh/chị!  
 Nếu cần source code để tham khảo, anh/chị chỉ cần clone repo này về nhé.
 
-Cảm ơn anh/chị đã dành thời gian! 🙏  
-Thành Đạt – 26/11/2025
+Cảm ơn anh/chị đã dành thời gian! 
+Thành Đạt
