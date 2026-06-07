@@ -1,214 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV - Võ Cao Thành Đạt</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="controls">
-      <div class="lang-switch">
-        <button class="lang-btn active" onclick="switchLanguage('en')">EN</button>
-        <button class="lang-btn" onclick="switchLanguage('vi')">VI</button>
-      </div>
-      <button class="download-btn" onclick="window.print()">
-        <i class="fas fa-file-download"></i>
-        <span class="download-text" data-en="Save as PDF" data-vi="Lưu PDF">Save as PDF</span>
-      </button>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vo Cao Thanh Dat — Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Geist+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="controls-block no-print">
+  <button id="printBtn" class="print-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><polyline points="6 9 6 2 18 2 18 9"/><rect width="12" height="8" x="6" y="14"/></svg>
+    Xuất file PDF
+  </button>
+</div>
+<div class="page">
+ 
+  <!-- ══ HEADER ══ -->
+  <div class="hd">
+    <div class="hd-name">Võ Cao Thành Đạt</div>
+    <div class="hd-contact">
+      Sài Gòn, Việt Nam
+      <span class="sep">|</span>
+      +84 775 255 721
+      <span class="sep">|</span>
+      <a href="mailto:thanhdattt2006@gmail.com">thanhdattt2006@gmail.com</a>
+      <span class="sep">|</span>
+      <a href="https://github.com/thanhdattt2006">github.com/thanhdattt2006</a>
+      <span class="sep">|</span>
+      <a href="#">LinkedIn — Thành Đạt</a>
     </div>
-
-    <div class="container" id="cv-content">
-      <header class="header">
-        <div class="header-content">
-          <div class="header-text">
-            <h1 class="name">VÕ CAO THÀNH ĐẠT <span class="nickname">(Dave)</span></h1>
-            <p class="title" data-en="Backend Developer" data-vi="Backend Developer">Backend Developer</p>
-            <p
-              class="summary"
-              data-en="Aspiring Backend Developer pursuing ADSE at Aptech. Proficient in Java Spring Boot and PHP Laravel with hands-on experience in RESTful APIs and full-stack apps. Former tour guide with strong English fluency and adaptability. Seeking an internship to deliver high-impact solutions."
-              data-vi="Lập trình viên Backend tương lai đang học ADSE tại Aptech. Thành thạo Java Spring Boot và PHP Laravel với kinh nghiệm thực tế về RESTful API và ứng dụng full-stack. Từng là hướng dẫn viên với tiếng Anh lưu loát và khả năng thích nghi cao. Đang tìm kiếm cơ hội thực tập để đóng góp giá trị thực tế."
-            >
-              Aspiring Backend Developer pursuing ADSE at Aptech. Proficient in Java Spring Boot and PHP Laravel with hands-on experience in RESTful APIs and full-stack apps. Former tour guide with strong English fluency and adaptability. Seeking an internship to deliver high-impact solutions.
-            </p>
-          </div>
-          <div class="profile-photo">
-            <img src="asset/CV-img.jpg" alt="Avatar" onerror="this.style.display='none';" />
-          </div>
-        </div>
-      </header>
-
-      <div class="main-content">
-        <section class="section">
-          <h2 class="section-title" data-en="Contact Information" data-vi="Thông Tin Liên Hệ">Contact Information</h2>
-          <ul class="contact-list">
-            <li>
-              <span class="label">Email:</span>
-              <span>thanhdattt2006@gmail.com</span>
-            </li>
-            <li>
-              <span class="label">Phone:</span>
-              <span>+84 775 255 721</span>
-            </li>
-            <li>
-              <span class="label" data-en="Location" data-vi="Địa chỉ">Location</span>
-              <span data-en="Saigon, Vietnam" data-vi="Sài Gòn, Việt Nam">Saigon, Vietnam</span>
-            </li>
-            <li>
-              <span class="label">GitHub:</span>
-              <a href="https://github.com/thanhdattt2006" target="_blank">github.com/thanhdattt2006</a>
-            </li>
-            <li>
-              <span class="label">LinkedIn:</span>
-              <a href="https://www.linkedin.com/in/th%C3%A0nh-%C4%91%E1%BA%A1t-619b37340/" target="_blank">Thành Đạt</a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="section">
-          <h2 class="section-title" data-en="Technical Skills" data-vi="Kỹ Năng Kỹ Thuật">Technical Skills</h2>
-          <div class="skills-container">
-            <div class="edu-item">
-              <div class="time">2023 - Present</div>
-              <div class="degree">ADSE - Advanced Diploma in Software Engineering</div>
-              <div class="school">Aptech Computer Education</div>
-            </div>
-            <ul class="skills-list">
-              <li>
-                <strong data-en="Frontend" data-vi="Frontend">Frontend:</strong>
-                <span>HTML5, CSS3, JS (ES6+), ReactJS, Blade</span>
-              </li>
-              <li>
-                <strong data-en="Backend" data-vi="Backend">Backend:</strong>
-                <span>Java, PHP, RESTful APIs</span>
-              </li>
-              <li>
-                <strong data-en="Frameworks" data-vi="Frameworks">Frameworks:</strong>
-                <span>Spring Boot, Laravel, Bootstrap</span>
-              </li>
-              <li>
-                <strong data-en="Database & Tools" data-vi="CSDL & Công cụ">Database & Tools:</strong>
-                <span>MySQL, Git, GitHub, Docker (Basic)</span>
-              </li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2 class="section-title" data-en="Languages" data-vi="Ngôn Ngữ">Languages</h2>
-          <ul class="language-list">
-            <li>
-              <strong data-en="Vietnamese" data-vi="Tiếng Việt">Vietnamese:</strong>
-              <span data-en="(Native)" data-vi="(Bản ngữ)">(Native)</span>
-            </li>
-            <li>
-              <strong data-en="English" data-vi="Tiếng Anh">English:</strong>
-              <span data-en="(Fluent)" data-vi="(Thành thạo)">(Fluent)</span>
-            </li>
-          </ul>
-        </section>
-
-        <section class="section">
-          <h2 class="section-title" data-en="Featured Projects" data-vi="Dự Án Nổi Bật">Featured Projects</h2>
-          <div class="item">
-            <div class="item-header">
-              <h3 class="item-title">Full-Stack Shoe Store</h3>
-              <div class="project-links">
-                <a href="https://laravel-nike-store.onrender.com/" target="_blank">Demo</a>
-                <a href="https://github.com/thanhdattt2006/Laravel-Store/" target="_blank">Code</a>
-              </div>
-            </div>
-            <ul
-              class="description-list"
-              data-en="<li>Built a full-stack e-commerce site using Laravel & Blade.</li><li>Implemented Auth middleware and custom registration UI.</li><li>Developed AJAX features: Real-time Cart update, Dynamic Pricing, Checkout.</li><li>Implemented Search and Order History tracking.</li>"
-              data-vi="<li>Xây dựng web bán giày full-stack dùng Laravel & Blade.</li><li>Triển khai Auth middleware và giao diện đăng ký tùy chỉnh.</li><li>Tính năng AJAX: Cập nhật giỏ hàng Real-time, Giá động, Thanh toán.</li><li>Tích hợp tìm kiếm và theo dõi lịch sử đơn hàng.</li>"
-            >
-              <li>Built a full-stack e-commerce site using Laravel & Blade.</li>
-              <li>Implemented Auth middleware and custom registration UI.</li>
-              <li>Developed AJAX features: Real-time Cart update, Dynamic Pricing, Checkout.</li>
-              <li>Implemented Search and Order History tracking.</li>
-            </ul>
-          </div>
-
-          <div class="item">
-            <div class="item-header">
-              <h3 class="item-title">Vietnote Fullstack App</h3>
-              <div class="project-links">
-                <a href="https://vietnote.vercel.app" target="_blank">Demo</a>
-                <a href="https://github.com/thanhdattt2006/Vietnote" target="_blank">Code</a>
-              </div>
-            </div>
-            <p
-              class="item-meta"
-              data-en="Personal | Laravel API, ReactJS, Docker | 11/2025"
-              data-vi="Cá nhân | Laravel API, ReactJS, Docker | 11/2025"
-            >
-              Personal | Laravel API, ReactJS, Docker | 11/2025
-            </p>
-            <ul
-              class="description-list"
-              data-en="<li><b>Tech Stack:</b> Laravel Sanctum (Auth), React/Vite, Docker (Render).</li><li>Solved complex CORS/Proxy issues & deployed Multi-step OTP Password Reset.</li><li>Built Admin Dashboard with Recharts & User Management stats.</li><li>Optimized UX with Masonry Layout & fixed Dark Mode flickering (FOUC).</li><li><b>Performance:</b> Async Queued Mail (Resend API) & Image SEO optimization.</li>"
-              data-vi="<li><b>Công nghệ:</b> Laravel Sanctum (Auth), React/Vite, Docker (Render).</li><li>Giải quyết lỗi CORS/Proxy & triển khai Reset mật khẩu Multi-step OTP.</li><li>Xây dựng Admin Dashboard với Recharts & thống kê User.</li><li>Tối ưu UX với Masonry Layout & sửa lỗi nháy Dark Mode (FOUC).</li><li><b>Hiệu năng:</b> Xử lý Mail hàng đợi (Async Queue) & tối ưu SEO hình ảnh.</li>"
-            >
-              <li><b>Tech Stack:</b> Laravel Sanctum (Auth), React/Vite, Docker (Render).</li>
-              <li>Solved complex CORS/Proxy issues & deployed Multi-step OTP Password Reset.</li>
-              <li>Built Admin Dashboard with Recharts & User Management stats.</li>
-              <li>Optimized UX with Masonry Layout & fixed Dark Mode flickering (FOUC).</li>
-              <li><b>Performance:</b> Async Queued Mail (Resend API) & Image SEO optimization.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2 class="section-title" data-en="Experience" data-vi="Kinh Nghiệm">Experience</h2>
-          <div class="item">
-            <div class="item-header">
-              <h3 class="item-title" data-en="Scooter Tour Guide" data-vi="Hướng Dẫn Viên Du Lịch Xe Máy">Freelance Scooter Tour Guide</h3>
-              <span class="company-date">Freelance | 2024 - Present</span>
-            </div>
-            <ul
-              class="description-list"
-              data-en="<li>Led 250+ tours for international guests; excellent storytelling on VN history/culture.</li><li>Mastered English communication & soft skills via cross-cultural interactions.</li><li>Developed leadership & crisis management skills in high-pressure traffic conditions.</li>"
-              data-vi="<li>Dẫn hơn 250 tour cho khách quốc tế; kể chuyện lịch sử/văn hóa Việt Nam lôi cuốn.</li><li>Thành thạo giao tiếp tiếng Anh & kỹ năng mềm qua tương tác đa văn hóa.</li><li>Phát triển kỹ năng lãnh đạo & xử lý khủng hoảng trong điều kiện giao thông áp lực.</li>"
-            >
-              <li>Led 250+ tours for international guests; excellent storytelling on VN history/culture.</li>
-              <li>Mastered English communication & soft skills via cross-cultural interactions.</li>
-              <li>Developed leadership & crisis management skills in high-pressure traffic conditions.</li>
-            </ul>
-          </div>
-        </section>
-
-        <section class="section">
-          <h2 class="section-title" data-en="Certifications" data-vi="Chứng Chỉ">Certifications</h2>
-          <div class="item">
-            <div class="item-header">
-              <h3 class="item-title" data-en="Practical Generative AI for Developers" data-vi="Practical Generative AI for Developers">Practical Generative AI for Developers</h3>
-              <span class="company-date">(09/2025)</span>
-            </div>
-            <p
-              class="description"
-              data-en="- RAG pipelines, Vector DB, LLM Integration."
-              data-vi="- RAG pipelines, Vector DB, Tích hợp LLM."
-            >
-              - RAG pipelines, Vector DB, LLM Integration.
-            </p>
-          </div>
-          <div class="item">
-            <div class="item-header">
-              <h3 class="item-title" data-en="Practical Generative AI for Everyone" data-vi="Practical Generative AI for Everyone">Practical Generative AI for Everyone</h3>
-              <span class="company-date">(08/2025)</span>
-            </div>
-          </div>
-        </section>
+  </div>
+ 
+  <div class="rule-double"></div>
+ 
+  <!-- ══ EDUCATION ══ -->
+  <div class="sec">
+    <div class="sec-title">Education</div>
+    <div class="ent">
+      <div class="row">
+        <span class="ent-title">Advanced Diploma in Software Engineering (ADSE)</span>
+        <span class="ent-right">2023 – Present</span>
+      </div>
+      <div class="ent-org">Aptech Computer Education &nbsp;·&nbsp; Ho Chi Minh City, Vietnam</div>
+    </div>
+  </div>
+ 
+  <!-- ══ TECHNICAL SKILLS ══ -->
+  <div class="sec">
+    <div class="sec-title">Technical Skills</div>
+    <div class="skill-row">
+      <span class="sk-label">Languages</span>
+      <span class="sk-val"><strong>Java</strong>, PHP, C#, JavaScript, TypeScript, Python</span>
+    </div>
+    <div class="skill-row">
+      <span class="sk-label">Frameworks</span>
+      <span class="sk-val"><strong>Spring Boot</strong>, Laravel, NestJS, .NET</span>
+    </div>
+    <div class="skill-row">
+      <span class="sk-label">Databases</span>
+      <span class="sk-val"><strong>MySQL</strong>, PostgreSQL, MongoDB, Redis</span>
+    </div>
+    <div class="skill-row">
+      <span class="sk-label">Tools &amp; Infra</span>
+      <span class="sk-val">IntelliJ, Postman, Git, Docker <em style="color:#777;font-size:7.8pt">(Basic)</em></span>
+    </div>
+    <div class="skill-row">
+      <span class="sk-label">Languages (Human)</span>
+      <span class="sk-val">
+        <span class="lang-name-b">Vietnamese</span> <span class="lang-lvl">(Native)</span>
+        &nbsp;·&nbsp;
+        <span class="lang-name-b">English</span> <span class="lang-lvl">(Fluent)</span>
+        &nbsp;·&nbsp;
+        <span class="lang-name-b">Japanese</span> <span class="lang-lvl">(Beginner)</span>
+      </span>
+    </div>
+  </div>
+ 
+  <!-- ══ EXPERIENCE ══ -->
+  <div class="sec">
+    <div class="sec-title">Experience</div>
+    <div class="ent">
+      <div class="row">
+        <span class="ent-title">Freelance Scooter Tour Guide</span>
+        <span class="ent-right">2024 – Present</span>
+      </div>
+      <div class="ent-org">Self-employed &nbsp;·&nbsp; Ho Chi Minh City, Vietnam</div>
+      <ul class="bl">
+        <li>Delivered 300+ guided city tours for international visitors; presented Vietnamese history and culture through immersive storytelling.</li>
+        <li>Developed fluent English communication and cross-cultural interpersonal skills through continuous client interaction.</li>
+        <li>Strengthened leadership and on-the-spot crisis management under high-pressure urban traffic conditions.</li>
+      </ul>
+    </div>
+  </div>
+ 
+  <!-- ══ PROJECTS ══ -->
+  <div class="sec">
+    <div class="sec-title">Projects</div>
+ 
+    <div class="ent">
+      <div class="row">
+        <span class="ent-title">Vietnote — Full-Stack Notes Application</span>
+        <span class="ent-right">
+          Nov 2025 &nbsp;·&nbsp;
+          <a href="#" style="color:#111;text-decoration:none;border-bottom:0.5px solid #999">Demo</a>
+          &nbsp;/&nbsp;
+          <a href="#" style="color:#111;text-decoration:none;border-bottom:0.5px solid #999">Code</a>
+        </span>
+      </div>
+      <div class="ent-tech">Laravel Sanctum · React / Vite · Docker · Redis · Resend API</div>
+      <ul class="bl">
+        <li>Designed and built a REST API with Laravel Sanctum for stateless authentication; containerised entire stack with Docker and deployed on Render.</li>
+        <li>Resolved CORS/proxy misconfigurations; implemented multi-step OTP password-reset flow for enhanced account security.</li>
+        <li>Constructed Admin Dashboard with Recharts user analytics; applied Masonry layout and eliminated Dark Mode flash (FOUC).</li>
+        <li>Offloaded transactional email to an async queue via Resend API; applied image SEO optimisations for improved discoverability.</li>
+      </ul>
+    </div>
+ 
+    <div class="ent">
+      <div class="row">
+        <span class="ent-title">Full-Stack Shoe Store — E-Commerce Platform</span>
+        <span class="ent-right">
+          <a href="#" style="color:#111;text-decoration:none;border-bottom:0.5px solid #999">Demo</a>
+          &nbsp;/&nbsp;
+          <a href="#" style="color:#111;text-decoration:none;border-bottom:0.5px solid #999">Code</a>
+        </span>
+      </div>
+      <div class="ent-tech">Laravel · Blade · MySQL · AJAX</div>
+      <ul class="bl">
+        <li>Built a complete e-commerce storefront with Laravel & Blade; implemented custom Auth middleware and user registration flow.</li>
+        <li>Delivered real-time cart updates, dynamic pricing, and AJAX checkout for a smooth, page-reload-free shopping experience.</li>
+        <li>Integrated keyword search and order history tracking to support a full end-to-end purchase lifecycle.</li>
+      </ul>
+    </div>
+  </div>
+ 
+  <!-- ══ CERTIFICATIONS ══ -->
+  <div class="sec">
+    <div class="sec-title">Certifications</div>
+ 
+    <div>
+      <div class="cert-row">
+        <span class="cert-name">Practical Generative AI for Developers</span>
+        <span class="cert-date">Sep 2025</span>
+      </div>
+      <div class="cert-desc">RAG pipelines, Vector Databases, LLM integration</div>
+    </div>
+ 
+    <div>
+      <div class="cert-row">
+        <span class="cert-name">Practical Generative AI for Everyone</span>
+        <span class="cert-date">Aug 2025</span>
       </div>
     </div>
-    <script src="main.js"></script>
-  </body>
+  </div>
+ 
+  <div class="footer-line">
+    Võ Cao Thành Đạt &nbsp;·&nbsp; Backend Developer &nbsp;·&nbsp; thanhdattt2006@gmail.com
+  </div>
+ 
+</div>
+<script src="main.js"></script>
+</body>
 </html>
