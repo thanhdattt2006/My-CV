@@ -318,3 +318,271 @@ ul.bl li::before {
     display: none !important;
   }
 }
+
+/* ─────────────────────────────────────
+   CONTROLS & DROPDOWN
+   ───────────────────────────────────── */
+.controls-block {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.cv-select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #111;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.cv-select:hover, .cv-select:focus {
+  border-color: #888;
+}
+
+/* ─────────────────────────────────────
+   HYBRID CV LAYOUT (Minimalist/Clean)
+   ───────────────────────────────────── */
+.hybrid-page {
+  /* Inherits .page styles but can override if needed */
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+.hybrid-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #eaeaea;
+  margin-bottom: 12px;
+}
+
+.hybrid-img-container {
+  width: 90px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.hybrid-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hybrid-header-text {
+  flex: 1;
+}
+
+.hybrid-name {
+  font-size: 24pt;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: #111;
+  margin-bottom: 2px;
+}
+
+.hybrid-title {
+  font-size: 11pt;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.hybrid-contact {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  row-gap: 6px;
+  font-size: 8.5pt;
+  color: #444;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-item svg {
+  color: #777;
+}
+
+.contact-item a {
+  color: #444;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.contact-item a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.hybrid-sec-title {
+  font-size: 10pt;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.hybrid-sec-title::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #111;
+}
+
+.hybrid-summary {
+  font-size: 8.5pt;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.hybrid-summary p {
+  margin-bottom: 4px;
+}
+
+.hybrid-summary p:last-child {
+  margin-bottom: 0;
+}
+
+.hybrid-summary a {
+  color: #111;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.hybrid-ent {
+  margin-bottom: 8px;
+}
+
+.hybrid-ent-title {
+  font-size: 10pt;
+  font-weight: 600;
+  color: #111;
+}
+
+.hybrid-date {
+  font-family: 'Geist Mono', monospace;
+  font-size: 8pt;
+  color: #666;
+}
+
+.hybrid-date a {
+  color: #111;
+  text-decoration: none;
+  border-bottom: 1px solid #999;
+}
+
+.hybrid-ent-org {
+  font-size: 9pt;
+  color: #555;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.hybrid-bl {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 4px;
+}
+
+.hybrid-bl li {
+  font-size: 8.5pt;
+  line-height: 1.45;
+  color: #333;
+  padding-left: 14px;
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.hybrid-bl li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 3.5px;
+  height: 3.5px;
+  background-color: #888;
+  border-radius: 50%;
+}
+
+.hybrid-skills {
+  margin-bottom: 12px;
+}
+
+.hybrid-skill-row {
+  display: flex;
+  margin-bottom: 3px;
+  font-size: 8.5pt;
+  line-height: 1.45;
+}
+
+.hybrid-label {
+  width: 100px;
+  font-weight: 600;
+  color: #222;
+  flex-shrink: 0;
+}
+
+.hybrid-val {
+  color: #333;
+}
+
+.hybrid-tech {
+  font-family: 'Geist Mono', monospace;
+  font-size: 7.5pt;
+  color: #666;
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+.hybrid-cert-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hybrid-cert-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.hybrid-cert-name {
+  font-size: 9.5pt;
+  font-weight: 600;
+  color: #111;
+}
+
+.hybrid-cert-desc {
+  width: 100%;
+  font-size: 8.5pt;
+  color: #555;
+  margin-top: 2px;
+}

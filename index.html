@@ -14,6 +14,10 @@
   </head>
   <body>
     <div class="controls-block no-print">
+      <select id="cvSelector" class="cv-select">
+        <option value="harvard">Mẫu Harvard</option>
+        <option value="hybrid">Mẫu Hybrid (Có Ảnh & Summary)</option>
+      </select>
       <button id="printBtn" class="print-btn">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +39,7 @@
         Xuất file PDF
       </button>
     </div>
-    <div class="page">
+    <div class="page" id="cv-harvard">
       <!-- ══ HEADER ══ -->
       <div class="hd">
         <div class="hd-name">Võ Cao Thành Đạt</div>
@@ -266,6 +270,142 @@
       <div class="footer-line">
         Võ Cao Thành Đạt &nbsp;·&nbsp; Backend Java Developer &nbsp;·&nbsp;
         thanhdattt2006@gmail.com
+      </div>
+    </div>
+
+    <!-- ══ HYBRID CV ══ -->
+    <div class="page hybrid-page" id="cv-hybrid" style="display: none;">
+      <!-- HEADER -->
+      <div class="hybrid-header">
+        <div class="hybrid-img-container">
+          <img src="vo_cao_thanh_dat.png" alt="Vo Cao Thanh Dat" class="hybrid-img">
+        </div>
+        <div class="hybrid-header-text">
+          <h1 class="hybrid-name">Võ Cao Thành Đạt</h1>
+          <h2 class="hybrid-title">Backend Java Developer</h2>
+          <div class="hybrid-contact">
+            <span class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Sài Gòn, Việt Nam
+            </span>
+            <span class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+              +84 775 255 721
+            </span>
+            <span class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:thanhdattt2006@gmail.com">thanhdattt2006@gmail.com</a>
+            </span>
+            <span class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              <a href="https://github.com/thanhdattt2006" target="_blank">github.com/thanhdattt2006</a>
+            </span>
+            <span class="contact-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://www.linkedin.com/in/thanhdat-java-backend-dev/" target="_blank">linkedin.com/in/thanhdat</a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hybrid-main">
+        <!-- SUMMARY -->
+        <div class="sec">
+          <div class="hybrid-sec-title">Professional Summary</div>
+          <div class="hybrid-summary">
+            <p><strong>Education Background:</strong> Currently pursuing an Advanced Diploma in Software Engineering (ADSE) at Aptech with a strong focus on Backend Java. I have built a solid technical foundation through practical projects (e.g., <a href="https://github.com/thanhdattt2006/mitmit---Live-Chat-Web" target="_blank">mitmit Live Chat</a> and <a href="https://github.com/thanhdattt2006/vietnote" target="_blank">Vietnote</a>).</p>
+            <p><strong>Core Strengths:</strong> Strong logical thinking, high capacity for self-learning, and fluent English communication honed as an international Tour Guide. Solid grasp of Java Core, Spring Boot, OOP principles, and hands-on application deployment.</p>
+            <p><strong>Areas for Growth:</strong> Seeking to gain more experience in large-scale enterprise environments. I am highly adaptable, eager to learn, and ready to quickly integrate into professional workflows to bridge this gap.</p>
+          </div>
+        </div>
+
+        <!-- EDUCATION -->
+        <div class="sec">
+          <div class="hybrid-sec-title">Education</div>
+          <div class="ent hybrid-ent">
+            <div class="row">
+              <span class="hybrid-ent-title">Advanced Diploma in Software Engineering (ADSE)</span>
+              <span class="hybrid-date">2023 – Present</span>
+            </div>
+            <div class="hybrid-ent-org">Aptech Computer Education · Ho Chi Minh City, Vietnam</div>
+          </div>
+        </div>
+
+        <!-- TECHNICAL SKILLS -->
+        <div class="sec">
+          <div class="hybrid-sec-title">Technical Skills</div>
+          <div class="hybrid-skills">
+            <div class="hybrid-skill-row"><span class="hybrid-label">Languages</span> <span class="hybrid-val"><strong>Java (core focus)</strong>, PHP, JavaScript</span></div>
+            <div class="hybrid-skill-row"><span class="hybrid-label">Frameworks</span> <span class="hybrid-val"><strong>Spring Boot (core focus)</strong>, Laravel, React/Vite</span></div>
+            <div class="hybrid-skill-row"><span class="hybrid-label">Databases</span> <span class="hybrid-val"><strong>MySQL (core focus)</strong>, MongoDB, Redis</span></div>
+            <div class="hybrid-skill-row"><span class="hybrid-label">Tools & Infra</span> <span class="hybrid-val">IntelliJ, Postman, Git, Sourcetree, Docker (Basic), Linux (Basic)</span></div>
+            <div class="hybrid-skill-row"><span class="hybrid-label">Soft Skills</span> <span class="hybrid-val">Vietnamese (Native), English (Fluent)</span></div>
+          </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div class="sec">
+          <div class="hybrid-sec-title">Experience</div>
+          <div class="ent hybrid-ent">
+            <div class="row">
+              <span class="hybrid-ent-title">Freelance Scooter Tour Guide</span>
+              <span class="hybrid-date">2024 – Present</span>
+            </div>
+            <div class="hybrid-ent-org">Self-employed · Ho Chi Minh City, Vietnam</div>
+            <ul class="hybrid-bl">
+              <li>Delivered 300+ guided city tours for international visitors; presented Vietnamese history and culture through immersive storytelling.</li>
+              <li>Developed fluent English communication and cross-cultural interpersonal skills through continuous client interaction.</li>
+              <li>Strengthened leadership and on-the-spot crisis management under high-pressure urban traffic conditions.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PROJECTS -->
+        <div class="sec">
+          <div class="hybrid-sec-title">Projects</div>
+          <div class="ent hybrid-ent">
+            <div class="row">
+              <span class="hybrid-ent-title">mitmit — Live Web Chat</span>
+              <span class="hybrid-date"><a href="https://github.com/thanhdattt2006/mitmit---Live-Chat-Web" target="_blank">Code</a></span>
+            </div>
+            <div class="hybrid-tech">Spring Boot · React · WebRTC · OAuth 2.0 · MySQL · MongoDB · Redis · Cloudinary</div>
+            <ul class="hybrid-bl">
+              <li><strong>Architecture & Matchmaking:</strong> Engineered a low-latency engine utilizing Spring Boot, MySQL, and Redis, resolving concurrent queueing race conditions to ensure seamless 3-minute pairings.</li>
+              <li><strong>Real-time Comm & Storage:</strong> Established P2P video/voice connections and secure STOMP WebSockets; integrated Cloudinary for stateless media delivery and offloaded MongoDB logging to async thread pools.</li>
+              <li><strong>Security & Integrity:</strong> Mitigated cross-origin session drops via strict HttpOnly JWT cookies and deployed a Redis-backed profanity filter. Ensured system stability via comprehensive Unit Testing (JUnit 5, Mockito).</li>
+            </ul>
+          </div>
+
+          <div class="ent hybrid-ent">
+            <div class="row">
+              <span class="hybrid-ent-title">Vietnote — Full-Stack Notes Application</span>
+              <span class="hybrid-date"><a href="https://github.com/thanhdattt2006/vietnote" target="_blank">Code</a></span>
+            </div>
+            <div class="hybrid-tech">Laravel Sanctum · React / Vite · OAuth 2.0 · Docker · MySQL · SMTP</div>
+            <ul class="hybrid-bl">
+              <li><strong>API & Infrastructure:</strong> Designed and built a REST API with Laravel Sanctum for stateless authentication; containerised entire stack with Docker and deployed on Render.</li>
+              <li><strong>Security & Fixes:</strong> Resolved CORS/proxy misconfigurations; implemented multi-step OTP password-reset flow for enhanced account security.</li>
+              <li><strong>SEO Optimization:</strong> Applied image SEO optimisations for improved discoverability.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CERTIFICATIONS -->
+        <div class="sec">
+          <div class="hybrid-sec-title">Certifications</div>
+          <div class="hybrid-cert-grid">
+            <div class="hybrid-cert-row">
+              <span class="hybrid-cert-name">Practical Generative AI for Developers</span>
+              <span class="hybrid-date">Sep 2025</span>
+              <div class="hybrid-cert-desc">RAG pipelines, Vector Databases, LLM integration</div>
+            </div>
+            <div class="hybrid-cert-row">
+              <span class="hybrid-cert-name">Practical Generative AI for Everyone</span>
+              <span class="hybrid-date">Aug 2025</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
     <script src="main.js"></script>
