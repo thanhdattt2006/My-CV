@@ -57,7 +57,7 @@ body {
   height: 297mm;
   background: #fff;
   overflow: hidden;
-  padding: 15.5mm 17mm 12mm 17mm;
+  padding: 10mm 17mm 10mm 17mm;
   display: flex;
   flex-direction: column;
   font-family: 'Inter', sans-serif;
@@ -70,7 +70,7 @@ body {
    ───────────────────────────────────── */
 .hd {
   text-align: center;
-  padding-bottom: 7px;
+  padding-bottom: 4px;
 }
  
 .hd-name {
@@ -109,7 +109,7 @@ body {
 .rule-double {
   border: none;
   border-top: 2px solid #000;
-  margin-top: 6px;
+  margin-top: 4px;
   position: relative;
 }
 .rule-double::after {
@@ -123,7 +123,7 @@ body {
    SECTION HEADER
    ───────────────────────────────────── */
 .sec {
-  margin-top: 8px;
+  margin-top: 5px;
 }
  
 .sec-title {
@@ -133,9 +133,9 @@ body {
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #000;
-  padding-bottom: 2.5px;
+  padding-bottom: 2px;
   border-bottom: 0.8px solid #000;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
  
 /* ─────────────────────────────────────
@@ -186,7 +186,7 @@ body {
 /* bullet list */
 ul.bl {
   list-style: none;
-  margin-top: 4px;
+  margin-top: 2px;
   padding: 0;
 }
 ul.bl li {
@@ -208,7 +208,7 @@ ul.bl li::before {
 }
  
 /* entry spacing */
-.ent { margin-bottom: 8px; }
+.ent { margin-bottom: 4px; }
 .ent:last-child { margin-bottom: 0; }
  
 /* ─────────────────────────────────────
@@ -217,7 +217,7 @@ ul.bl li::before {
 .skill-row {
   display: flex;
   gap: 0;
-  margin-bottom: 4px;
+  margin-bottom: 2px;
   font-size: 8.5pt;
   line-height: 1.5;
 }
@@ -310,7 +310,7 @@ ul.bl li::before {
     width: 210mm !important;
     height: 297mm !important;
     margin: 0 !important;
-    padding: 15.5mm 17mm 12mm 17mm !important;
+    padding: 10mm 17mm 10mm 17mm !important;
     page-break-after: avoid;
     page-break-before: avoid;
   }
