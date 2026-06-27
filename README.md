@@ -28,7 +28,7 @@ Cảm ơn anh/chị đã ghé thăm portfolio của em!
 
 ### Kinh nghiệm ngoài công nghệ
 Freelance Tour Guide Scooter (2024 → nay)  
-- Đã dẫn hơn 250 tour cho khách quốc tế tại TP.HCM  
+- Đã dẫn hơn 300 tour cho khách quốc tế tại TP.HCM  
 - Giao tiếp tiếng Anh trôi chảy, xử lý tình huống nhanh, kỹ năng lãnh đạo nhóm tốt.
 
 Em luôn giữ thái độ tích cực, trách nhiệm cao và sẵn sàng học hỏi công nghệ mới mỗi ngày.
