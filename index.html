@@ -3,65 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- SEO Meta Tags -->
     <title>Vo Cao Thanh Dat — Backend Java Developer CV</title>
-    <meta name="description" content="Professional CV of Vo Cao Thanh Dat (Dave). Backend Java Developer specializing in Spring Boot, Laravel, and RESTful APIs. Actively seeking internship and development opportunities." />
-    <meta name="keywords" content="Vo Cao Thanh Dat, Dave, Backend Developer, Java Developer, Spring Boot, Laravel, PHP, Portfolio, CV, Resume" />
+    <meta
+      name="description"
+      content="Professional CV of Vo Cao Thanh Dat (Dave). Backend Java Developer specializing in Spring Boot, Laravel, and RESTful APIs. Actively seeking internship and development opportunities."
+    />
+    <meta
+      name="keywords"
+      content="Vo Cao Thanh Dat, Dave, Backend Developer, Java Developer, Spring Boot, Laravel, PHP, Portfolio, CV, Resume"
+    />
     <meta name="author" content="Vo Cao Thanh Dat" />
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile" />
     <meta property="og:url" content="https://thanhdattt2006.github.io/myCV/" />
-    <meta property="og:title" content="Vo Cao Thanh Dat — Backend Java Developer CV" />
-    <meta property="og:description" content="Check out the professional CV of Vo Cao Thanh Dat, a passionate Backend Developer focusing on Java Core and Spring Boot." />
-    <meta property="og:image" content="https://thanhdattt2006.github.io/myCV/vo_cao_thanh_dat.png" />
+    <meta
+      property="og:title"
+      content="Vo Cao Thanh Dat — Backend Java Developer CV"
+    />
+    <meta
+      property="og:description"
+      content="Check out the professional CV of Vo Cao Thanh Dat, a passionate Backend Developer focusing on Java Core and Spring Boot."
+    />
+    <meta
+      property="og:image"
+      content="https://thanhdattt2006.github.io/myCV/vo_cao_thanh_dat.png"
+    />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://thanhdattt2006.github.io/myCV/" />
-    
+
     <!-- JSON-LD Structured Data for Google -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Vo Cao Thanh Dat",
-      "jobTitle": "Backend Java Developer",
-      "url": "https://thanhdattt2006.github.io/myCV/",
-      "image": "https://thanhdattt2006.github.io/myCV/vo_cao_thanh_dat.png",
-      "sameAs": [
-        "https://github.com/thanhdattt2006",
-        "https://www.linkedin.com/in/thanhdat-java-backend-dev/"
-      ],
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Ho Chi Minh City",
-        "addressCountry": "VN"
-      },
-      "email": "thanhdattt2006@gmail.com",
-      "telephone": "+84775255721"
-    }
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vo Cao Thanh Dat",
+        "jobTitle": "Backend Java Developer",
+        "url": "https://thanhdattt2006.github.io/myCV/",
+        "image": "https://thanhdattt2006.github.io/myCV/vo_cao_thanh_dat.png",
+        "sameAs": [
+          "https://github.com/thanhdattt2006",
+          "https://www.linkedin.com/in/thanhdat-java-backend-dev/"
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Ho Chi Minh City",
+          "addressCountry": "VN"
+        },
+        "email": "thanhdattt2006@gmail.com",
+        "telephone": "+84775255721"
+      }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Geist+Mono:wght@300;400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="controls-block no-print">
-      <select id="cvSelector" class="cv-select">
-        <option value="harvard">Mẫu Harvard</option>
-        <option value="hybrid">Mẫu Hybrid (Có Ảnh & Summary)</option>
-      </select>
-      <button id="printBtn" class="print-btn">
+    <!-- Print Button -->
+    <div class="controls no-print">
+      <button id="printBtn" class="print-btn" aria-label="Export to PDF">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="18"
-          height="18"
+          width="16"
+          height="16"
           viewBox="0 0 24 24"
           fill="none"
           stroke="currentColor"
@@ -75,378 +87,319 @@
           <polyline points="6 9 6 2 18 2 18 9" />
           <rect width="12" height="8" x="6" y="14" />
         </svg>
-        Xuất file PDF
+        Export PDF
       </button>
     </div>
-    <div class="page" id="cv-harvard">
-      <!-- ══ HEADER ══ -->
-      <div class="hd">
-        <div class="hd-name">Võ Cao Thành Đạt</div>
-        <div
-          style="
-            font-family: 'Inter', sans-serif;
-            font-size: 10pt;
-            font-weight: 600;
-            color: #444;
-            margin-top: 5px;
-            letter-spacing: 0.05em;
-            text-transform: uppercase;
-          "
-        >
-          Backend Java Developer
-        </div>
-        <div class="hd-contact" style="margin-top: 4px">
-          Sài Gòn, Việt Nam
-          <span class="sep">|</span>
-          +84 775 255 721
-          <span class="sep">|</span>
-          <a href="mailto:thanhdattt2006@gmail.com">thanhdattt2006@gmail.com</a>
-          <span class="sep">|</span>
-          <a href="https://github.com/thanhdattt2006">GitHub</a>
-          <span class="sep">|</span>
-          <a href="https://www.linkedin.com/in/thanhdat-java-backend-dev/"
-            >LinkedIn</a
-          >
-        </div>
-      </div>
 
-      <div class="rule-double"></div>
-
-      <!-- ══ EDUCATION ══ -->
-      <div class="sec">
-        <div class="sec-title">Education</div>
-        <div class="ent">
-          <div class="row">
-            <span class="ent-title"
-              >Advanced Diploma in Software Engineering (ADSE)</span
-            >
-            <span class="ent-right">2023 – Present</span>
-          </div>
-          <div class="ent-org">
-            Aptech Computer Education &nbsp;·&nbsp; Ho Chi Minh City, Vietnam
-          </div>
+    <!-- ══ CV PAGE ══ -->
+    <div class="page" id="cv-page">
+      <!-- ── HEADER ── -->
+      <header class="header">
+        <div class="header-photo">
+          <img src="vo_cao_thanh_dat.png" alt="Vo Cao Thanh Dat" />
         </div>
-      </div>
-
-      <!-- ══ TECHNICAL SKILLS ══ -->
-      <div class="sec">
-        <div class="sec-title">Technical Skills</div>
-        <div class="skill-row">
-          <span class="sk-label">Languages</span>
-          <span class="sk-val"
-            ><strong>Java (core focus)</strong>, PHP, JavaScript</span
-          >
-        </div>
-        <div class="skill-row">
-          <span class="sk-label">Frameworks</span>
-          <span class="sk-val"
-            ><strong>Spring Boot (core focus)</strong>, Laravel,
-            React/Vite</span
-          >
-        </div>
-        <div class="skill-row">
-          <span class="sk-label">Databases</span>
-          <span class="sk-val"
-            ><strong>MySQL (core focus)</strong>, MongoDB, Redis</span
-          >
-        </div>
-        <div class="skill-row">
-          <span class="sk-label">Tools &amp; Infra</span>
-          <span class="sk-val"
-            >IntelliJ, Postman, Git, Sourcetree, Docker
-            <em style="color: #777; font-size: 7.8pt">(Basic)</em>, Linux
-            <em style="color: #777; font-size: 7.8pt">(Basic)</em></span
-          >
-        </div>
-        <div class="skill-row">
-          <span class="sk-label">Languages</span>
-          <span class="sk-val">
-            <span class="lang-name-b">Vietnamese</span>
-            <span class="lang-lvl">(Native)</span>
-            &nbsp;·&nbsp;
-            <span class="lang-name-b">English</span>
-            <span class="lang-lvl">(Fluent)</span>
-            &nbsp;·&nbsp;
-          </span>
-        </div>
-      </div>
-
-      <!-- ══ EXPERIENCE ══ -->
-      <div class="sec">
-        <div class="sec-title">Experience</div>
-        <div class="ent">
-          <div class="row">
-            <span class="ent-title">Freelance Scooter Tour Guide</span>
-            <span class="ent-right">2024 – Present</span>
-          </div>
-          <div class="ent-org">
-            Self-employed &nbsp;·&nbsp; Ho Chi Minh City, Vietnam
-          </div>
-          <ul class="bl">
-            <li>
-              Delivered 300+ guided city tours for international visitors;
-              presented Vietnamese history and culture through immersive
-              storytelling.
-            </li>
-            <li>
-              Developed fluent English communication and cross-cultural
-              interpersonal skills through continuous client interaction.
-            </li>
-            <li>
-              Strengthened leadership and on-the-spot crisis management under
-              high-pressure urban traffic conditions.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ══ PROJECTS ══ -->
-      <div class="sec">
-        <div class="sec-title">Projects</div>
-
-        <div class="ent">
-          <div class="row">
-            <span class="ent-title">mitmit — Live Web Chat</span>
-            <span class="ent-right">
-              <a
-                href="https://github.com/thanhdattt2006/mitmit---Live-Chat-Web"
-                style="
-                  color: #111;
-                  text-decoration: none;
-                  border-bottom: 0.5px solid #999;
-                "
-                >Code</a
-              >
-            </span>
-          </div>
-          <div class="ent-tech">
-            Spring Boot · React · WebRTC · OAuth 2.0 · MySQL · MongoDB · Redis ·
-            Cloudinary
-          </div>
-          <ul class="bl">
-            <li>
-              <strong>Architecture & Matchmaking:</strong> Engineered a
-              low-latency engine utilizing Spring Boot, MySQL, and Redis,
-              resolving concurrent queueing race conditions to ensure seamless
-              3-minute pairings.
-            </li>
-            <li>
-              <strong>Real-time Comm & Storage:</strong> Established P2P
-              video/voice connections and secure STOMP WebSockets; integrated
-              Cloudinary for stateless media delivery and offloaded MongoDB
-              logging to async thread pools.
-            </li>
-            <li>
-              <strong>Security & Integrity:</strong> Mitigated cross-origin
-              session drops via strict HttpOnly JWT cookies and deployed a
-              Redis-backed profanity filter. Ensured system stability via
-              comprehensive Unit Testing (JUnit 5, Mockito).
-            </li>
-          </ul>
-        </div>
-
-        <div class="ent">
-          <div class="row">
-            <span class="ent-title"
-              >Vietnote — Full-Stack Notes Application</span
-            >
-            <span class="ent-right">
-              <a
-                href="https://github.com/thanhdattt2006/vietnote"
-                style="
-                  color: #111;
-                  text-decoration: none;
-                  border-bottom: 0.5px solid #999;
-                "
-                >Code</a
-              >
-            </span>
-          </div>
-          <div class="ent-tech">
-            Laravel Sanctum · React / Vite · OAuth 2.0 · Docker · MySQL · SMTP
-          </div>
-          <ul class="bl">
-            <li>
-              <strong>API & Infrastructure:</strong> Designed and built a REST API with Laravel Sanctum for stateless
-              authentication; containerised entire stack with Docker and
-              deployed on Render.
-            </li>
-            <li>
-              <strong>Security & Fixes:</strong> Resolved CORS/proxy misconfigurations; implemented multi-step OTP
-              password-reset flow for enhanced account security.
-            </li>
-            <li>
-              <strong>SEO Optimization:</strong> Applied image SEO optimisations for improved discoverability.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <!-- ══ CERTIFICATIONS ══ -->
-      <div class="sec">
-        <div class="sec-title">Certifications</div>
-
-        <div>
-          <div class="cert-row">
-            <span class="cert-name"
-              >Practical Generative AI for Developers</span
-            >
-            <span class="cert-date">Sep 2025</span>
-          </div>
-          <div class="cert-desc">
-            RAG pipelines, Vector Databases, LLM integration
-          </div>
-        </div>
-
-        <div>
-          <div class="cert-row">
-            <span class="cert-name">Practical Generative AI for Everyone</span>
-            <span class="cert-date">Aug 2025</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-line">
-        Võ Cao Thành Đạt &nbsp;·&nbsp; Backend Java Developer &nbsp;·&nbsp;
-        thanhdattt2006@gmail.com
-      </div>
-    </div>
-
-    <!-- ══ HYBRID CV ══ -->
-    <div class="page hybrid-page" id="cv-hybrid" style="display: none;">
-      <!-- HEADER -->
-      <div class="hybrid-header">
-        <div class="hybrid-img-container">
-          <img src="vo_cao_thanh_dat.png" alt="Vo Cao Thanh Dat" class="hybrid-img">
-        </div>
-        <div class="hybrid-header-text">
-          <h1 class="hybrid-name">Võ Cao Thành Đạt</h1>
-          <h2 class="hybrid-title">Backend Java Developer</h2>
-          <div class="hybrid-contact">
+        <div class="header-info">
+          <h1 class="name">Võ Cao Thành Đạt</h1>
+          <h2 class="title">Backend Java Developer</h2>
+          <div class="contact-bar">
             <span class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
               Sài Gòn, Việt Nam
             </span>
             <span class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2" />
+                <path d="M12 18h.01" />
+              </svg>
               +84 775 255 721
             </span>
             <span class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <a href="mailto:thanhdattt2006@gmail.com">thanhdattt2006@gmail.com</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect width="20" height="16" x="2" y="4" rx="2" />
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+              </svg>
+              <a href="mailto:thanhdattt2006@gmail.com"
+                >thanhdattt2006@gmail.com</a
+              >
             </span>
             <span class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-              <a href="https://github.com/thanhdattt2006" target="_blank">github.com/thanhdattt2006</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+              <a href="https://github.com/thanhdattt2006" target="_blank"
+                >github.com/thanhdattt2006</a
+              >
             </span>
             <span class="contact-item">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-              <a href="https://www.linkedin.com/in/thanhdat-java-backend-dev/" target="_blank">linkedin.com/in/thanhdat</a>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="11"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                />
+                <rect width="4" height="12" x="2" y="9" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+              <a
+                href="https://www.linkedin.com/in/thanhdat-java-backend-dev/"
+                target="_blank"
+                >linkedin.com/in/thanhdat-java-backend-dev/</a
+              >
             </span>
           </div>
         </div>
-      </div>
+      </header>
 
-      <div class="hybrid-main">
-        <!-- SUMMARY -->
-        <div class="sec">
-          <div class="hybrid-sec-title">Professional Summary</div>
-          <div class="hybrid-summary">
-            <p><strong>Education Background:</strong> Currently pursuing an Advanced Diploma in Software Engineering (ADSE) at Aptech with a strong focus on Backend Java. I have built a solid technical foundation through practical projects (e.g., <a href="https://github.com/thanhdattt2006/mitmit---Live-Chat-Web" target="_blank">mitmit Live Chat</a> and <a href="https://github.com/thanhdattt2006/vietnote" target="_blank">Vietnote</a>).</p>
-            <p><strong>Core Strengths:</strong> Strong logical thinking, high capacity for self-learning, and fluent English communication honed as an international Tour Guide. Solid grasp of Java Core, Spring Boot, OOP principles, and hands-on application deployment.</p>
-            <p><strong>Areas for Growth:</strong> Seeking to gain more experience in large-scale enterprise environments. I am highly adaptable, eager to learn, and ready to quickly integrate into professional workflows to bridge this gap.</p>
+      <!-- ── PROFESSIONAL SUMMARY ── -->
+      <section class="section">
+        <h3 class="section-title">Professional Summary</h3>
+        <div class="summary">
+          <p>
+            Backend Java Developer (Intern/Fresher) with a strong logical
+            mindset and high self-learning capacity, backed by practical
+            experience in building full-stack applications using Spring Boot and
+            Laravel. Fluent in English with professional working proficiency,
+            enabling effective collaboration in international environments and
+            large-scale outsourcing projects.
+          </p>
+          <p>
+            <strong>Core Strengths:</strong> Asynchronous processing, database
+            optimization, API security, and real-time communication systems
+            (WebRTC, WebSocket).
+          </p>
+        </div>
+      </section>
+
+      <!-- ── EDUCATION ── -->
+      <section class="section">
+        <h3 class="section-title">Education</h3>
+        <div class="entry">
+          <div class="entry-row">
+            <span class="entry-name"
+              >Advanced Diploma in Software Engineering (ADSE)</span
+            >
+            <span class="entry-date">Sep 2024 – Mar 2027 (expected)</span>
+          </div>
+          <div class="entry-org">
+            Aptech Computer Education · Ho Chi Minh City, Vietnam
           </div>
         </div>
+      </section>
 
-        <!-- EDUCATION -->
-        <div class="sec">
-          <div class="hybrid-sec-title">Education</div>
-          <div class="ent hybrid-ent">
-            <div class="row">
-              <span class="hybrid-ent-title">Advanced Diploma in Software Engineering (ADSE)</span>
-              <span class="hybrid-date">2023 – Present</span>
-            </div>
-            <div class="hybrid-ent-org">Aptech Computer Education · Ho Chi Minh City, Vietnam</div>
+      <!-- ── EXPERIENCE ── -->
+      <section class="section">
+        <h3 class="section-title">Experience</h3>
+        <div class="entry">
+          <div class="entry-row">
+            <span class="entry-name">Freelance Scooter Tour Guide</span>
+            <span class="entry-date">2024 – Present</span>
           </div>
+          <div class="entry-org">Self-employed · Ho Chi Minh City, Vietnam</div>
+          <ul class="entry-list">
+            <li>
+              <strong>Cross-Cultural Communication:</strong> Led 300+ city tours
+              for international visitors, enhancing fluent English speaking and
+              reading skills for technical documentations.
+            </li>
+            <li>
+              <strong>Leadership &amp; Crisis Management:</strong> Directed tour
+              groups and resolved unforeseen traffic/navigation incidents under
+              high pressure.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── PROJECTS ── -->
+      <section class="section">
+        <h3 class="section-title">Projects</h3>
+
+        <div class="entry">
+          <div class="entry-row">
+            <span class="entry-name"
+              >mitmit — Live Web Chat (Real-time Blind Dating App)</span
+            >
+            <span class="entry-date"
+              >Apr 2026 – Present &nbsp;·&nbsp;
+              <a
+                href="https://github.com/thanhdattt2006/mitmit---Live-Chat-Web"
+                target="_blank"
+                >Code</a
+              ></span
+            >
+          </div>
+          <div class="entry-tech">
+            Spring Boot · React · WebRTC · OAuth 2.0 · MySQL · MongoDB · Redis ·
+            Cloudinary
+          </div>
+          <ul class="entry-list">
+            <li>
+              <strong>Architecture &amp; Matchmaking:</strong> Built a
+              low-latency pairing engine using Spring Boot and Redis, resolving
+              concurrent matchmaking queue race conditions.
+            </li>
+            <li>
+              <strong>Real-time Comm &amp; Storage:</strong> Established secure
+              WebRTC P2P connection and STOMP WebSockets; offloaded MongoDB
+              logging via async thread pools.
+            </li>
+            <li>
+              <strong>Security &amp; Testing:</strong> Prevented CORS session
+              drops with HttpOnly JWT cookies and verified system stability via
+              JUnit 5 and Mockito.
+            </li>
+          </ul>
         </div>
 
-        <!-- TECHNICAL SKILLS -->
-        <div class="sec">
-          <div class="hybrid-sec-title">Technical Skills</div>
-          <div class="hybrid-skills">
-            <div class="hybrid-skill-row"><span class="hybrid-label">Languages</span> <span class="hybrid-val"><strong>Java (core focus)</strong>, PHP, JavaScript</span></div>
-            <div class="hybrid-skill-row"><span class="hybrid-label">Frameworks</span> <span class="hybrid-val"><strong>Spring Boot (core focus)</strong>, Laravel, React/Vite</span></div>
-            <div class="hybrid-skill-row"><span class="hybrid-label">Databases</span> <span class="hybrid-val"><strong>MySQL (core focus)</strong>, MongoDB, Redis</span></div>
-            <div class="hybrid-skill-row"><span class="hybrid-label">Tools & Infra</span> <span class="hybrid-val">IntelliJ, Postman, Git, Sourcetree, Docker (Basic), Linux (Basic)</span></div>
-            <div class="hybrid-skill-row"><span class="hybrid-label">Soft Skills</span> <span class="hybrid-val">Vietnamese (Native), English (Fluent)</span></div>
+        <div class="entry">
+          <div class="entry-row">
+            <span class="entry-name"
+              >Vietnote — Full-Stack Notes Application</span
+            >
+            <span class="entry-date"
+              >Nov 2025 – Feb 2026 &nbsp;·&nbsp;
+              <a
+                href="https://github.com/thanhdattt2006/vietnote"
+                target="_blank"
+                >Code</a
+              ></span
+            >
+          </div>
+          <div class="entry-tech">
+            Laravel Sanctum · React / Vite · OAuth 2.0 · Docker · MySQL · SMTP
+          </div>
+          <ul class="entry-list">
+            <li>
+              <strong>API &amp; Infrastructure:</strong> Developed a complete
+              RESTful API system using Laravel Sanctum for authentication,
+              containerized with Docker, and deployed on Render.
+            </li>
+            <li>
+              <strong>Security &amp; Features:</strong> Engineered a secure,
+              multi-step OTP password reset flow and resolved CORS/Proxy
+              configuration conflicts.
+            </li>
+            <li>
+              <strong>Database Design:</strong> Designed and refactored MySQL
+              database schemas, optimizing complex queries to improve page
+              loading speeds.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ── TECHNICAL SKILLS ── -->
+      <section class="section">
+        <h3 class="section-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-row">
+            <span class="skill-label">Languages</span>
+            <span class="skill-value"
+              ><strong>Java (Core Focus)</strong>, PHP, JavaScript</span
+            >
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Frameworks</span>
+            <span class="skill-value"
+              ><strong
+                >Spring Boot, Spring Security, Spring Data, Spring Web (Core
+                Focus)</strong
+              >, Laravel, React/Vite</span
+            >
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Databases</span>
+            <span class="skill-value"
+              ><strong>MySQL (Core Focus)</strong>, MongoDB, Redis</span
+            >
+          </div>
+          <div class="skill-row">
+            <span class="skill-label">Tools &amp; Infra</span>
+            <span class="skill-value"
+              >IntelliJ, Postman, Git, Sourcetree, Docker <em>(Basic)</em>,
+              Linux <em>(Basic)</em></span
+            >
           </div>
         </div>
+      </section>
 
-        <!-- EXPERIENCE -->
-        <div class="sec">
-          <div class="hybrid-sec-title">Experience</div>
-          <div class="ent hybrid-ent">
-            <div class="row">
-              <span class="hybrid-ent-title">Freelance Scooter Tour Guide</span>
-              <span class="hybrid-date">2024 – Present</span>
-            </div>
-            <div class="hybrid-ent-org">Self-employed · Ho Chi Minh City, Vietnam</div>
-            <ul class="hybrid-bl">
-              <li>Delivered 300+ guided city tours for international visitors; presented Vietnamese history and culture through immersive storytelling.</li>
-              <li>Developed fluent English communication and cross-cultural interpersonal skills through continuous client interaction.</li>
-              <li>Strengthened leadership and on-the-spot crisis management under high-pressure urban traffic conditions.</li>
-            </ul>
+      <!-- ── CERTIFICATIONS ── -->
+      <section class="section">
+        <h3 class="section-title">Certifications</h3>
+        <div class="cert-entry">
+          <div class="entry-row">
+            <span class="cert-name"
+              >Practical Generative Artificial Intelligence for Developers</span
+            >
+            <span class="entry-date">Sep 2025</span>
+          </div>
+          <div class="cert-desc">RAG pipelines, Vector Databases</div>
+        </div>
+        <div class="cert-entry">
+          <div class="entry-row">
+            <span class="cert-name"
+              >Practical Generative Artificial Intelligence for Everyone</span
+            >
+            <span class="entry-date">Aug 2025</span>
           </div>
         </div>
-
-        <!-- PROJECTS -->
-        <div class="sec">
-          <div class="hybrid-sec-title">Projects</div>
-          <div class="ent hybrid-ent">
-            <div class="row">
-              <span class="hybrid-ent-title">mitmit — Live Web Chat</span>
-              <span class="hybrid-date"><a href="https://github.com/thanhdattt2006/mitmit---Live-Chat-Web" target="_blank">Code</a></span>
-            </div>
-            <div class="hybrid-tech">Spring Boot · React · WebRTC · OAuth 2.0 · MySQL · MongoDB · Redis · Cloudinary</div>
-            <ul class="hybrid-bl">
-              <li><strong>Architecture & Matchmaking:</strong> Engineered a low-latency engine utilizing Spring Boot, MySQL, and Redis, resolving concurrent queueing race conditions to ensure seamless 3-minute pairings.</li>
-              <li><strong>Real-time Comm & Storage:</strong> Established P2P video/voice connections and secure STOMP WebSockets; integrated Cloudinary for stateless media delivery and offloaded MongoDB logging to async thread pools.</li>
-              <li><strong>Security & Integrity:</strong> Mitigated cross-origin session drops via strict HttpOnly JWT cookies and deployed a Redis-backed profanity filter. Ensured system stability via comprehensive Unit Testing (JUnit 5, Mockito).</li>
-            </ul>
-          </div>
-
-          <div class="ent hybrid-ent">
-            <div class="row">
-              <span class="hybrid-ent-title">Vietnote — Full-Stack Notes Application</span>
-              <span class="hybrid-date"><a href="https://github.com/thanhdattt2006/vietnote" target="_blank">Code</a></span>
-            </div>
-            <div class="hybrid-tech">Laravel Sanctum · React / Vite · OAuth 2.0 · Docker · MySQL · SMTP</div>
-            <ul class="hybrid-bl">
-              <li><strong>API & Infrastructure:</strong> Designed and built a REST API with Laravel Sanctum for stateless authentication; containerised entire stack with Docker and deployed on Render.</li>
-              <li><strong>Security & Fixes:</strong> Resolved CORS/proxy misconfigurations; implemented multi-step OTP password-reset flow for enhanced account security.</li>
-              <li><strong>SEO Optimization:</strong> Applied image SEO optimisations for improved discoverability.</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- CERTIFICATIONS -->
-        <div class="sec">
-          <div class="hybrid-sec-title">Certifications</div>
-          <div class="hybrid-cert-grid">
-            <div class="hybrid-cert-row">
-              <span class="hybrid-cert-name">Practical Generative AI for Developers</span>
-              <span class="hybrid-date">Sep 2025</span>
-              <div class="hybrid-cert-desc">RAG pipelines, Vector Databases, LLM integration</div>
-            </div>
-            <div class="hybrid-cert-row">
-              <span class="hybrid-cert-name">Practical Generative AI for Everyone</span>
-              <span class="hybrid-date">Aug 2025</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
+      </section>
     </div>
+
     <script src="main.js"></script>
   </body>
 </html>
