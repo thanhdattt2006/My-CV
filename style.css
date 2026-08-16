@@ -73,7 +73,7 @@ body {
   height: 297mm;
   background: #fff;
   overflow: hidden;
-  padding: 14mm 18mm 12mm 18mm;
+  padding: 14mm 18mm 10mm 18mm;
   display: flex;
   flex-direction: column;
   color: #222;
@@ -168,7 +168,7 @@ body {
    SECTIONS
    ═══════════════════════════════════════ */
 .section {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 .section-title {
@@ -179,7 +179,7 @@ body {
   color: #000;
   padding-bottom: 3px;
   border-bottom: 1px solid #ccc;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 /* ═══════════════════════════════════════
@@ -203,7 +203,7 @@ body {
    ENTRIES (Education, Experience, Projects)
    ═══════════════════════════════════════ */
 .entry {
-  margin-bottom: 7px;
+  margin-bottom: 5px;
 }
 
 .entry:last-child {
@@ -374,7 +374,7 @@ body {
     width: 210mm !important;
     height: 297mm !important;
     margin: 0 !important;
-    padding: 14mm 18mm 12mm 18mm !important;
+    padding: 14mm 18mm 10mm 18mm !important;
     page-break-after: avoid;
     page-break-before: avoid;
   }
