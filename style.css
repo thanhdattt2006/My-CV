@@ -168,7 +168,8 @@ body {
    SECTIONS
    ═══════════════════════════════════════ */
 .section {
-  margin-top: 8px;
+  margin-top: 10px;
+  margin-bottom: 6px;
 }
 
 .section-title {
