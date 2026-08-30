@@ -237,13 +237,24 @@
           </div>
           <ul class="entry-list">
             <li>
-              <strong>Data-integrity bug fix (JOT:340):</strong> Traced a CSV import bug where empty numeric fields were coerced to 0 instead of NULL, tracing through Controller → Model → convert layer to find the root cause; evaluated 2 fix strategies (generic vs targeted) trading off speed against maintainability, then extended the fix after mentor review to cover derived-field edge cases (e.g. calculated time fields) across 6 organ types.
+              <strong>Data-integrity bug (JOT:340):</strong> Uncovered a silent data-corruption issue
+              where empty CSV fields were being saved as 0 instead of NULL — a bug with no crash or
+              error, only quietly wrong medical data. Weighed 2 fix strategies (broad-and-fast vs.
+              scoped-and-safe) to balance speed against risk, then extended the fix across all 6 organ
+              types after uncovering an additional edge case in derived/calculated fields.
             </li>
             <li>
-              <strong>Feature development — new facility type:</strong> Implemented a new institution type end-to-end across routing, menu navigation, DB query models, controllers, and views for both HQ and facility sides; fixed a login bug where users without organ/work assignments were excluded by an INNER JOIN, and a hardcoded account-type bug blocking correct permission checks.
+              <strong>Built out a new facility type end-to-end:</strong> Since the existing system had
+              no concept of this account type, designed the permission flow from scratch across both
+              HQ and facility-side interfaces — and in the process, found and patched 2 existing bugs:
+              a login-blocking issue caused by an overly strict INNER JOIN, and hardcoded logic that
+              ignored the new facility type entirely.
             </li>
             <li>
-              <strong>Bug fix — root-cause debugging (task 344):</strong> Fixed incorrect NYHA classification values for recipient organ HR caused by array_slice() re-indexing array keys without preserve_keys, silently shifting values III/IV to 0/1 instead of their expected code (3/4); verified fix across display, save, and reload states.
+              <strong>Root-caused subtle data bugs from low-level data handling:</strong> Traced 2
+              separate cases of incorrect medical values being saved/displayed back to easy-to-miss
+              causes — an array operation that silently dropped original indexes, and a mismatched
+              column mapping — verifying each fix across save, display, and reload.
             </li>
           </ul>
         </div>

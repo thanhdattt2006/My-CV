@@ -151,8 +151,8 @@ body {
    SECTIONS
    ═══════════════════════════════════════ */
 .section {
-  margin-top: 10px;
-  margin-bottom: 6px;
+  margin-top: 12px;
+  margin-bottom: 8px;
 }
 
 .section-title {
@@ -187,7 +187,7 @@ body {
    ENTRIES (Education, Experience, Projects)
    ═══════════════════════════════════════ */
 .entry {
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .entry:last-child {
@@ -257,7 +257,7 @@ body {
   color: #333;
   padding-left: 12px;
   position: relative;
-  margin-bottom: 1px;
+  margin-bottom: 3px;
 }
 
 .entry-list li::before {
