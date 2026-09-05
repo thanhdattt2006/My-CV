@@ -201,7 +201,12 @@
         <h3 class="section-title">Professional Summary</h3>
         <div class="summary">
           <p>
-            Backend Developer with hands-on internship experience resolving 15+ production bugs and delivering features on a legacy Japanese healthcare system (CodeIgniter/PHP), backed by independent full-stack projects in Spring Boot and Laravel. Fluent in English, enabling effective collaboration in international outsourcing environments.
+            Backend Developer with hands-on internship experience resolving 15+
+            production bugs and delivering features on a legacy Japanese
+            healthcare system (CodeIgniter/PHP), backed by independent
+            full-stack projects in Spring Boot and Laravel. Fluent in English,
+            enabling effective collaboration in international outsourcing
+            environments.
           </p>
         </div>
       </section>
@@ -225,41 +230,51 @@
       <!-- ── EXPERIENCE ── -->
       <section class="section">
         <h3 class="section-title">Experience</h3>
-        
+
         <div class="entry">
           <div class="entry-row">
             <span class="entry-name">Software Engineer Intern</span>
             <span class="entry-date">Jul 2026 – Present</span>
           </div>
-          <div class="entry-org">Green Space Solution (GSS) · Ho Chi Minh City, Vietnam</div>
+          <div class="entry-org">
+            Green Space Solution (GSS) · Ho Chi Minh City, Vietnam
+          </div>
           <div class="entry-tech">
-            JOTNW/TRACER — legacy production system for organ transplant data management, spanning multiple facility roles and organ types · CodeIgniter 3 · PHP · MariaDB · JavaScript
+            JOTNW/TRACER — legacy production system for organ transplant data
+            management, spanning multiple facility roles and organ types ·
+            CodeIgniter 3 · PHP · MariaDB · JavaScript
           </div>
           <ul class="entry-list">
             <li>
-              <strong>Data-integrity bug (JOT:340):</strong> Uncovered a silent data-corruption issue
-              where empty CSV fields were being saved as 0 instead of NULL — a bug with no crash or
-              error, only quietly wrong medical data. Weighed 2 fix strategies (broad-and-fast vs.
-              scoped-and-safe) to balance speed against risk, then extended the fix across all 6 organ
-              types after uncovering an additional edge case in derived/calculated fields.
+              <strong>Data-integrity bug (JOT:340):</strong> Uncovered a silent
+              data-corruption issue where empty CSV fields were being saved as 0
+              instead of NULL — a bug with no crash or error, only quietly wrong
+              medical data. Weighed 2 fix strategies (broad-and-fast vs.
+              scoped-and-safe) to balance speed against risk, then extended the
+              fix across all 6 organ types after uncovering an additional edge
+              case in derived/calculated fields.
             </li>
             <li>
-              <strong>Built out a new facility type end-to-end:</strong> Since the existing system had
-              no concept of this account type, designed the permission flow from scratch across both
-              HQ and facility-side interfaces — and in the process, found and patched 2 existing bugs:
-              a login-blocking issue caused by an overly strict INNER JOIN, and hardcoded logic that
-              ignored the new facility type entirely.
+              <strong>Built out a new facility type end-to-end:</strong> Since
+              the existing system had no concept of this account type, designed
+              the permission flow from scratch across both HQ and facility-side
+              interfaces — and in the process, found and patched 2 existing
+              bugs: a login-blocking issue caused by an overly strict INNER
+              JOIN, and hardcoded logic that ignored the new facility type
+              entirely.
             </li>
             <li>
-              <strong>Root-caused subtle data bugs from low-level data handling:</strong> Traced 2
-              separate cases of incorrect medical values being saved/displayed back to easy-to-miss
-              causes — an array operation that silently dropped original indexes, and a mismatched
-              column mapping — verifying each fix across save, display, and reload.
+              <strong
+                >Root-caused subtle data bugs from low-level data
+                handling:</strong
+              >
+              Traced 2 separate cases of incorrect medical values being
+              saved/displayed back to easy-to-miss causes — an array operation
+              that silently dropped original indexes, and a mismatched column
+              mapping — verifying each fix across save, display, and reload.
             </li>
           </ul>
         </div>
-
-
       </section>
 
       <!-- ── PROJECTS ── -->
@@ -358,17 +373,20 @@
           <div class="skill-row">
             <span class="skill-label">Tools &amp; Infra</span>
             <span class="skill-value"
-              >IntelliJ, Postman, Git, Sourcetree, Docker <em>(Basic)</em>,
-              Linux <em>(Basic)</em>, Mattermost, GitLab</span
+              >IntelliJ, Maven, Postman, Git, Antigravity IDE/CLI, Docker
+              <em>(Basic)</em>, Linux <em>(Basic)</em>, Mattermost,
+              Dbeaver</span
             >
           </div>
           <div class="skill-row">
             <span class="skill-label">Soft Skills</span>
-            <span class="skill-value">Cross-cultural communication, English fluency (300+ tours led for international visitors across 50+ countries)</span>
+            <span class="skill-value"
+              >Cross-cultural communication, English fluency (300+ tours led for
+              international visitors across 50+ countries)</span
+            >
           </div>
         </div>
       </section>
-
     </div>
 
     <script src="main.js"></script>
