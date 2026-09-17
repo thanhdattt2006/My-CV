@@ -5,31 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SEO Meta Tags -->
-    <title>Vo Cao Thanh Dat — Backend Developer CV</title>
+    <title>Vo Cao Thanh Dat — Full Stack Developer CV</title>
     <meta
       name="description"
-      content="Professional CV of Vo Cao Thanh Dat (Dave). Backend Developer specializing in Spring Boot, Laravel, and RESTful APIs. Actively seeking internship and development opportunities."
+      content="Professional CV of Vo Cao Thanh Dat (Dave). Full Stack Developer proficient in React, Spring Boot, Laravel, RESTful APIs, and real-time WebRTC/WebSockets."
     />
     <meta
       name="keywords"
-      content="Vo Cao Thanh Dat, Dave, Backend Developer, Java Developer, Spring Boot, Laravel, PHP, Portfolio, CV, Resume"
+      content="Vo Cao Thanh Dat, Dave, Full Stack Developer, React, Spring Boot, Java, Laravel, PHP, JavaScript, Portfolio, CV, Resume"
     />
     <meta name="author" content="Vo Cao Thanh Dat" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://thanhdattt2006.github.io/myCV/" />
+    <meta
+      property="og:url"
+      content="https://thanhdattt2006.github.io/myCV/fullstack.html"
+    />
     <meta
       property="og:title"
-      content="Vo Cao Thanh Dat — Backend Developer CV"
+      content="Vo Cao Thanh Dat — Full Stack Developer CV"
     />
     <meta
       property="og:description"
-      content="Check out the professional CV of Vo Cao Thanh Dat, a passionate Backend Developer focusing on Java Core and Spring Boot."
+      content="Check out the professional CV of Vo Cao Thanh Dat, a Full Stack Developer skilled in React, Spring Boot, and modern web architectures."
     />
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://thanhdattt2006.github.io/myCV/" />
+    <link
+      rel="canonical"
+      href="https://thanhdattt2006.github.io/myCV/fullstack.html"
+    />
 
     <!-- JSON-LD Structured Data for Google -->
     <script type="application/ld+json">
@@ -37,8 +43,8 @@
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Vo Cao Thanh Dat",
-        "jobTitle": "Backend Developer",
-        "url": "https://thanhdattt2006.github.io/myCV/",
+        "jobTitle": "Full Stack Developer",
+        "url": "https://thanhdattt2006.github.io/myCV/fullstack.html",
         "sameAs": [
           "https://github.com/thanhdattt2006",
           "https://www.linkedin.com/in/thanhdat-java-backend-dev/"
@@ -65,9 +71,11 @@
     <!-- Controls (Version Switcher & Print Button) -->
     <div class="controls no-print">
       <nav class="version-nav" aria-label="CV Versions">
-        <a href="index.html" class="version-btn active">Backend Dev</a>
-        <a href="fullstack.html" class="version-btn">Full Stack Dev</a>
-        <a href="software-engineer.html" class="version-btn">Software Engineer</a>
+        <a href="index.html" class="version-btn">Backend Dev</a>
+        <a href="fullstack.html" class="version-btn active">Full Stack Dev</a>
+        <a href="software-engineer.html" class="version-btn"
+          >Software Engineer</a
+        >
       </nav>
       <button id="printBtn" class="print-btn" aria-label="Export to PDF">
         <svg
@@ -97,7 +105,7 @@
       <header class="header">
         <div class="header-info">
           <h1 class="name">Võ Cao Thành Đạt</h1>
-          <h2 class="title">Backend Developer</h2>
+          <h2 class="title">Full Stack Developer</h2>
           <div class="contact-bar">
             <span class="contact-item">
               <svg
@@ -206,15 +214,17 @@
         <h3 class="section-title">Professional Summary</h3>
         <div class="summary">
           <p>
-            Backend Developer with hands-on internship experience resolving 15+
-            production bugs and delivering features on a legacy Japanese
-            healthcare system (CodeIgniter/PHP), backed by independent
-            full-stack projects in Spring Boot and Laravel. Fluent in English,
-            enabling effective collaboration in international outsourcing
-            environments.
+            Full Stack Developer proficient in building responsive web
+            applications from dynamic React frontends to scalable Spring Boot
+            and Laravel backends. Hands-on experience delivering end-to-end
+            features and resolving 15+ production issues across database, API,
+            and UI layers on a legacy Japanese healthcare platform. Fluent in
+            English, enabling effective collaboration in cross-functional
+            international teams.
           </p>
           <p>
-            <strong>Availability:</strong> Flexible schedule, ready for full-time employment.
+            <strong>Availability:</strong> Flexible schedule, ready for
+            full-time employment.
           </p>
         </div>
       </section>
@@ -254,32 +264,29 @@
           </div>
           <ul class="entry-list">
             <li>
-              <strong>Data-integrity bug (JOT:340):</strong> Uncovered a silent
-              data-corruption issue where empty CSV fields were being saved as 0
-              instead of NULL — a bug with no crash or error, only quietly wrong
-              medical data. Weighed 2 fix strategies (broad-and-fast vs.
-              scoped-and-safe) to balance speed against risk, then extended the
-              fix across all 6 organ types after uncovering an additional edge
-              case in derived/calculated fields.
-            </li>
-            <li>
-              <strong>Built out a new facility type end-to-end:</strong> Since
-              the existing system had no concept of this account type, designed
-              the permission flow from scratch across both HQ and facility-side
-              interfaces — and in the process, found and patched 2 existing
-              bugs: a login-blocking issue caused by an overly strict INNER
-              JOIN, and hardcoded logic that ignored the new facility type
-              entirely.
+              <strong
+                >End-to-End Feature Delivery (New Facility Workflow):</strong
+              >
+              Engineered the full workflow for a newly added facility type
+              across both facility-facing and HQ admin interfaces — building
+              user forms, session permission checks, and database associations
+              while patching a login-blocking INNER JOIN edge case.
             </li>
             <li>
               <strong
-                >Root-caused subtle data bugs from low-level data
-                handling:</strong
+                >Full-Stack Bug Resolution (Data Integrity JOT:340):</strong
               >
-              Traced 2 separate cases of incorrect medical values being
-              saved/displayed back to easy-to-miss causes — an array operation
-              that silently dropped original indexes, and a mismatched column
-              mapping — verifying each fix across save, display, and reload.
+              Identified and resolved a silent data-corruption defect where
+              empty CSV inputs were stored as 0 instead of NULL; refactored
+              backend sanitization routines and verified accurate tabular
+              rendering across all 6 organ clinical views.
+            </li>
+            <li>
+              <strong>Frontend &amp; Data Layer Troubleshooting:</strong>
+              Diagnosed and fixed subtle data display discrepancies caused by
+              destructive array indexing in PHP and asynchronous DOM updates in
+              JavaScript, guaranteeing consistent data synchronization across
+              save, display, and reload states.
             </li>
           </ul>
         </div>
@@ -304,19 +311,21 @@
             >
           </div>
           <div class="entry-tech">
-            Spring Boot · React · WebRTC · OAuth 2.0 · MySQL · MongoDB · Redis ·
-            Cloudinary
+            React · Spring Boot · WebSockets / STOMP · WebRTC · Redis · MySQL ·
+            MongoDB · Cloudinary
           </div>
           <ul class="entry-list">
             <li>
-              <strong>Architecture &amp; Matchmaking:</strong> Built a
-              low-latency pairing engine using Spring Boot and Redis, resolving
-              concurrent matchmaking queue race conditions.
+              <strong>Full-Stack Real-Time Architecture:</strong> Developed an
+              interactive React client paired with Spring Boot, orchestrating
+              STOMP WebSockets and WebRTC for peer-to-peer video/audio streaming
+              with live call state synchronization.
             </li>
             <li>
-              <strong>Real-time Comm &amp; Storage:</strong> Established secure
-              WebRTC P2P connection and STOMP WebSockets; offloaded MongoDB
-              logging via async thread pools.
+              <strong>Matchmaking Engine &amp; Async Pipelines:</strong>
+              Constructed a low-latency user pairing queue powered by Redis with
+              instant UI feedback, while offloading chat logs and metrics to
+              MongoDB via background thread pools.
             </li>
           </ul>
         </div>
@@ -336,18 +345,21 @@
             >
           </div>
           <div class="entry-tech">
-            Laravel Sanctum · React / Vite · OAuth 2.0 · Docker · MySQL · SMTP
+            React / Vite · Laravel Sanctum · RESTful API · Docker · MySQL ·
+            OAuth 2.0 · SMTP
           </div>
           <ul class="entry-list">
             <li>
-              <strong>API &amp; Infrastructure:</strong> Developed a complete
-              RESTful API system using Laravel Sanctum for authentication,
-              containerized with Docker, and deployed on Render.
+              <strong>Modern SPA &amp; RESTful Integration:</strong> Built a
+              fast, responsive Single Page Application using React and Vite
+              consuming a secured Laravel REST API with token authentication,
+              live note search, and rich markdown formatting.
             </li>
             <li>
-              <strong>Database Design:</strong> Designed and refactored MySQL
-              database schemas, optimizing complex queries to improve page
-              loading speeds.
+              <strong>Database Modeling &amp; Containerization:</strong>
+              Designed normalized MySQL schemas with query optimization to
+              accelerate note retrieval, containerizing the entire application
+              stack with Docker for consistent multi-environment deployment.
             </li>
           </ul>
         </div>
@@ -358,38 +370,41 @@
         <h3 class="section-title">Technical Skills</h3>
         <div class="skills-grid">
           <div class="skill-row">
-            <span class="skill-label">Languages</span>
+            <span class="skill-label">Frontend</span>
             <span class="skill-value"
-              ><strong>Java (Core Focus)</strong>, PHP, JavaScript &nbsp;|&nbsp; <em>Familiar: C#, Python</em></span
+              ><strong>React, JavaScript (ES6+)</strong>, Angular, HTML5, CSS3,
+              Vite, Responsive Design, AJAX</span
             >
           </div>
           <div class="skill-row">
-            <span class="skill-label">Frameworks</span>
+            <span class="skill-label">Backend</span>
             <span class="skill-value"
-              ><strong
-                >Spring Boot, Spring Security, Spring Data, Spring Web (Core
-                Focus)</strong
-              >, Laravel, React/Vite</span
+              ><strong>Spring Boot, Spring Security</strong>, Laravel, PHP,
+              Java, RESTful APIs, WebSockets, WebRTC</span
             >
           </div>
           <div class="skill-row">
             <span class="skill-label">Databases</span>
             <span class="skill-value"
-              ><strong>MySQL (Core Focus)</strong>, MongoDB, Redis</span
+              ><strong>MySQL</strong>, MariaDB, MongoDB, Redis, Schema
+              Design</span
             >
           </div>
           <div class="skill-row">
             <span class="skill-label">Tools &amp; Infra</span>
             <span class="skill-value"
-              >IntelliJ, Maven, Postman, Git, Antigravity IDE/CLI, Docker
-              <em>(Basic)</em>, Linux <em>(Basic)</em>, Mattermost,
-              Dbeaver</span
+              >Docker <em>(Basic)</em>, Git, Postman, Maven, IntelliJ IDEA,
+              Antigravity IDE, Linux <em>(Basic)</em>, DBeaver</span
             >
           </div>
           <div class="skill-row">
             <span class="skill-label">Soft Skills</span>
             <span class="skill-value"
-              ><strong>Problem-solving</strong>, <strong>critical thinking</strong>, <strong>patience &amp; persistence</strong> in complex debugging, cross-cultural communication, English fluency (300+ tours led for international visitors across 50+ countries)</span
+              ><strong>Problem-solving</strong>,
+              <strong>critical thinking</strong>,
+              <strong>patience &amp; persistence</strong> in complex debugging,
+              cross-cultural communication, English fluency (300+ tours led for
+              international visitors across 50+ countries)</span
             >
           </div>
         </div>
