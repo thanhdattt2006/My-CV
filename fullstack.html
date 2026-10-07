@@ -258,35 +258,38 @@
             Green Space Solution (GSS) · Ho Chi Minh City, Vietnam
           </div>
           <div class="entry-tech">
-            JOTNW/TRACER — legacy production system for organ transplant data
-            management, spanning multiple facility roles and organ types ·
+            Enterprise Healthcare &amp; Clinical Data Management System ·
             CodeIgniter 3 · PHP · MariaDB · JavaScript
           </div>
           <ul class="entry-list">
             <li>
               <strong
-                >End-to-End Feature Delivery (New Facility Workflow):</strong
+                >Eliminated N+1 Query Bottlenecks in Reporting Engine:</strong
               >
-              Engineered the full workflow for a newly added facility type
-              across both facility-facing and HQ admin interfaces — building
-              user forms, session permission checks, and database associations
-              while patching a login-blocking INNER JOIN edge case.
+              Resolved system timeout issues during high-volume report exports by
+              replacing recursive schema metadata queries with an in-memory batch
+              caching strategy; reduced database overhead to a single batch fetch
+              and accelerated CSV generation runtime by 4×–5×.
             </li>
             <li>
               <strong
-                >Full-Stack Bug Resolution (Data Integrity JOT:340):</strong
+                >Hardened Bulk CSV Import &amp; Cron Synchronization Pipeline:</strong
               >
-              Identified and resolved a silent data-corruption defect where
-              empty CSV inputs were stored as 0 instead of NULL; refactored
-              backend sanitization routines and verified accurate tabular
-              rendering across all 6 organ clinical views.
+              Uncovered and patched a silent data corruption defect where empty
+              numerical inputs were cast to 0 instead of NULL across multiple
+              clinical subsystems; engineered dynamic update whitelists
+              (derivedUpdateColumns), whitespace sanitization, and multi-tier state
+              checks to ensure zero data loss during automated cron syncs.
             </li>
             <li>
-              <strong>Frontend &amp; Data Layer Troubleshooting:</strong>
-              Diagnosed and fixed subtle data display discrepancies caused by
-              destructive array indexing in PHP and asynchronous DOM updates in
-              JavaScript, guaranteeing consistent data synchronization across
-              save, display, and reload states.
+              <strong
+                >Architected Multi-Tier RBAC &amp; Dynamic Data Aggregation Modules:</strong
+              >
+              Engineered end-to-end access control flows across headquarters and
+              branch portal interfaces for newly integrated institutional account
+              tiers, refactoring restrictive database JOINs to prevent login
+              deadlocks; built dynamic export pipelines generating 200+ attributes
+              via reusable indexed generators to ensure long-term maintainability.
             </li>
           </ul>
         </div>
