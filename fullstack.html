@@ -265,28 +265,33 @@
           <ul class="entry-list">
             <li>
               <strong
-                >End-to-End Feature Delivery (New Facility Workflow):</strong
+                >Eliminated N+1 Query Bottlenecks in CSV Export Engine (JOT:361):</strong
               >
-              Engineered the full workflow for a newly added facility type
-              across both facility-facing and HQ admin interfaces — building
-              user forms, session permission checks, and database associations
-              while patching a login-blocking INNER JOIN edge case.
+              Resolved system timeout issues during donor report generation by
+              replacing redundant schema queries (getColumnComment) inside nested
+              loops with an in-memory batch caching strategy; slashed execution time
+              and accelerated data export runtime by 4×–5× for complex datasets.
             </li>
             <li>
               <strong
-                >Full-Stack Bug Resolution (Data Integrity JOT:340):</strong
+                >Hardened Bulk CSV Import &amp; Cron Sync Pipeline Across All 6 Organ Types (JOT:340, 348, 351, 352):</strong
               >
-              Identified and resolved a silent data-corruption defect where
-              empty CSV inputs were stored as 0 instead of NULL; refactored
-              backend sanitization routines and verified accurate tabular
-              rendering across all 6 organ clinical views.
+              Uncovered a silent data corruption defect where empty fields cast to
+              0 instead of NULL, scaling the fix across all organ subsystems;
+              engineered automated update routines using dynamic whitelists
+              (derivedUpdateColumns), edge-case sanitization (trailing whitespace),
+              and 5-tier condition checks to safeguard data integrity during cron
+              synchronizations.
             </li>
             <li>
-              <strong>Frontend &amp; Data Layer Troubleshooting:</strong>
-              Diagnosed and fixed subtle data display discrepancies caused by
-              destructive array indexing in PHP and asynchronous DOM updates in
-              JavaScript, guaranteeing consistent data synchronization across
-              save, display, and reload states.
+              <strong
+                >Architected Multi-Tier RBAC &amp; Survey Aggregation Engine (JOT:360, Excel 12, C006):</strong
+              >
+              Engineered end-to-end access control flows across HQ and operational
+              portals for new coordinator entities (ドナー法人) and inspection
+              facilities (kubun=5), resolving login deadlocks caused by strict
+              JOINs; refactored dynamic reporting modules spanning 200+ columns
+              into reusable indexed generators to ensure long-term maintainability.
             </li>
           </ul>
         </div>

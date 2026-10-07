@@ -264,26 +264,33 @@
           <ul class="entry-list">
             <li>
               <strong
-                >Root-Cause Analysis &amp; Data Integrity (JOT:340):</strong
+                >Eliminated N+1 Query Bottlenecks in CSV Export Engine (JOT:361):</strong
               >
-              Diagnosed a critical silent data corruption issue where empty CSV
-              inputs were cast to 0 instead of NULL; analyzed trade-offs between
-              broad vs. scoped patch strategies and scaled the fix across all 6
-              organ subsystems after identifying derived calculation edge cases.
+              Resolved system timeout issues during donor report generation by
+              replacing redundant schema queries (getColumnComment) inside nested
+              loops with an in-memory batch caching strategy; slashed execution time
+              and accelerated data export runtime by 4×–5× for complex datasets.
             </li>
             <li>
-              <strong>System Architecture &amp; Permission Modeling:</strong>
-              Architected permission models and data flows for a newly
-              integrated facility tier across administrative and operational
-              modules, refactoring inefficient INNER JOIN queries to resolve
-              edge-case login-blocking deadlocks.
+              <strong
+                >Hardened Bulk CSV Import &amp; Cron Sync Pipeline Across All 6 Organ Types (JOT:340, 348, 351, 352):</strong
+              >
+              Uncovered a silent data corruption defect where empty fields cast to
+              0 instead of NULL, scaling the fix across all organ subsystems;
+              engineered automated update routines using dynamic whitelists
+              (derivedUpdateColumns), edge-case sanitization (trailing whitespace),
+              and 5-tier condition checks to safeguard data integrity during cron
+              synchronizations.
             </li>
             <li>
-              <strong>Low-Level Debugging &amp; State Consistency:</strong>
-              Resolved elusive display and persistence discrepancies caused by
-              mutable array index stripping and unaligned schema mappings,
-              implementing regression checks across data write, display, and
-              reload lifecycles.
+              <strong
+                >Architected Multi-Tier RBAC &amp; Survey Aggregation Engine (JOT:360, Excel 12, C006):</strong
+              >
+              Engineered end-to-end access control flows across HQ and operational
+              portals for new coordinator entities (ドナー法人) and inspection
+              facilities (kubun=5), resolving login deadlocks caused by strict
+              JOINs; refactored dynamic reporting modules spanning 200+ columns
+              into reusable indexed generators to ensure long-term maintainability.
             </li>
           </ul>
         </div>
